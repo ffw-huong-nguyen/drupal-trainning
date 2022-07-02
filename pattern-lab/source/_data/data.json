@@ -1,0 +1,4 @@
+{
+  "tablet": "all and (min-width: 768px)",
+  "desktop": "all and (min-width: 1024px)"
+}

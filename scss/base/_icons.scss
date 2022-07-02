@@ -1,0 +1,19 @@
+@charset 'utf-8';
+// ICONS.
+
+%icons {
+  @include icomoon-ffw;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  &:before {
+    @extend %icons;
+  }
+}
+
+.icon-home {
+  &:before {
+    content: $icon-home;
+  }
+}

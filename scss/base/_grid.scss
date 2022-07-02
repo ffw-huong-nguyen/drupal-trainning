@@ -1,0 +1,11 @@
+.container {
+  @include container();
+
+  @include susy-media(tablet) {
+    @include container($susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    @include container($susy-desktop);
+  }
+}

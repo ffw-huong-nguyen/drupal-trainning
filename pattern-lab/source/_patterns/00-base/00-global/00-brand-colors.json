@@ -1,0 +1,18 @@
+{
+  "brand": {
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$primary-color",
+              "id": "#ec1b23"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "pageclass" : "",
+  "headerContent": {
+    "include()": {
+      "pattern": "base-header"
+    }
+  },
+  "mainRegion": {
+    "include()": {
+      "pattern": "templates-content-layout",
+      "with": {
+        "contentLayout": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-block-example"
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-example",
+                "with": {
+                  "blockExample": {
+                    "items": {
+                      "include()": {
+                        "pattern": "components-block-example-items",
+                        "with": {
+                          "items": [
+                            {
+                              "content": {
+                                "include()": {
+                                  "pattern": "components-block-example-item",
+                                  "with": {
+                                    "blockExampleItem": {
+                                      "counter": "350",
+                                      "character": "+",
+                                      "name": "Employees test"
+                                    }
+                                  },
+                                  "only": true
+                                }
+                              }
+                            },
+                            {
+                              "content": {
+                                "include()": {
+                                  "pattern": "components-block-example-item",
+                                  "with": {
+                                    "blockExampleItem": {
+                                      "counter": "20",
+                                      "character": "+",
+                                      "name": "Patents test"
+                                    }
+                                  },
+                                  "only": true
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "only": true
+                      }
+                    }
+                  }
+                },
+                "only": true
+              }
+            }
+          ]
+        }
+      },
+      "only": true
+    }
+  },
+  "footerContent": {
+    "include()": {
+      "pattern": "base-footer"
+    }
+  }
+}

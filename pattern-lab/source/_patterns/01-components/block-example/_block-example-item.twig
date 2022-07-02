@@ -1,0 +1,11 @@
+<span class="block-example__content">
+  {% if blockExampleItem.counter is not empty %}
+    <span class="block-example__counter js-block-example__counter">{{ blockExampleItem.counter }}</span>
+  {% endif %}
+  {% if blockExampleItem.character is not empty %}
+    <span class="block-example__character">{{ blockExampleItem.character }}</span>
+  {% endif %}
+</span>
+{% if blockExampleItem.name is not empty %}
+  <span class="block-example__name">{{ blockExampleItem.name }}</span>
+{% endif %}
