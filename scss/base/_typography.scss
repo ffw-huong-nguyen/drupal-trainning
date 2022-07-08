@@ -7,5 +7,170 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: rem(18px);
+}
+
+h1 {
+  font-size: rem(64px);
+
+  @include susy-media(mobile-landscape) {
+    font-size: rem(38px);
+  }
+
+  @include susy-media(desktop) {
+    font-size: rem(42px);
+  }
+
+  @include susy-media(desktop-wide) {
+    font-size: rem(50px);
+  }
+}
+
+h2 {
+  font-size: 37px;
+
+  @include susy-media(mobile-landscape) {
+    font-size: rem(38px);
+  }
+
+  @include susy-media(desktop) {
+    font-size: rem(42px);
+  }
+
+  @include susy-media(desktop-wide) {
+    font-size: rem(50px);
+  }
+}
+
+h3 {
+  font-size: rem(16px);
+
+  @include susy-media(tablet) {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: rem(14px);
+
+  @include susy-media(tablet) {
+    font-size: rem(18px);
+  }
+}
+
+h5 {
+  font-size: rem(12px);
+
+  @include susy-media(tablet) {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-size: rem(12px);
+}
+
+p {
+  font-family: "ProximaNova", sans-serif;
+  font-size: rem(18px);
   font-weight: normal;
+  margin-bottom: 17px;
+  line-height: 1.35;
+
+  @include susy-media(tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+%link,
+.link {
+  color: $blue;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:active,
+  &:hover {
+    color: $black;
+  }
+}
+
+a {
+  @extend %link;
+}
+
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+}
+
+small {
+  font-size: smaller;
+}
+
+abbr {
+  border-bottom: 1px dotted $black;
+  cursor: help;
+}
+
+tt,
+code,
+kbd,
+samp {
+  font-family: monospace;
+}
+
+ol,
+ul {
+
+  &.list li {
+    padding-left: rem(35px);
+    margin-bottom: rem(13px);
+    position: relative;
+
+    &:before {
+      content: '\2022';
+      position: absolute;
+      display: block;
+      top: rem(-10px);
+      left: 0;
+      margin-top: rem(10px);
+      font-size: 1rem;
+    }
+  }
+}
+
+label {
+  font-weight: 700;
+}
+
+blockquote {
+  p {
+    display: inline;
+    font-family: "LibreBaskerville", sans-serif;
+  }
+
+  &:before {
+    content: "\201c";
+  }
+
+  &:after {
+    content: "\201d";
+  }
 }

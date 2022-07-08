@@ -13,11 +13,6 @@
           "items": [
             {
               "include()": {
-                "pattern": "components-block-example"
-              }
-            },
-            {
-              "include()": {
                 "pattern": "components-block-example",
                 "with": {
                   "blockExample": {
@@ -64,6 +59,11 @@
                   }
                 },
                 "only": true
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-banner"
               }
             }
           ]

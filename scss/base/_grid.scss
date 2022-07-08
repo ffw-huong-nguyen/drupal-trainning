@@ -9,3 +9,11 @@
     @include container($susy-desktop);
   }
 }
+
+.container--large {
+  @include container();
+
+  @include susy-media(tablet) {
+    @include container(10 of $susy-desktop);
+  }
+}

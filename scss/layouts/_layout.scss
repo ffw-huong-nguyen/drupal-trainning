@@ -29,4 +29,7 @@ body {
     @include show-breakpoints;
   }
 
+  &.show-menu {
+    overflow: hidden;
+  }
 }

@@ -17,3 +17,45 @@
     content: $icon-home;
   }
 }
+
+.icon-search {
+  &:before {
+    content: $icon-search;
+  }
+}
+
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin;
+  }
+}
+
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down;
+  }
+}
+
+.icon-arrow-link {
+  &:before {
+    content: $icon-arrow-link;
+  }
+}
+
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right;
+  }
+}

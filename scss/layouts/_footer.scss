@@ -1,0 +1,74 @@
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+@import '../imports/colors';
+@import '../imports/variables';
+
+.footer {
+  padding: 80px 0;
+
+  a, p {
+    color: #727272;
+  }
+
+  .footer-column {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .footer-column__title {
+      text-transform: uppercase;
+    }
+
+    .footer-column__first {
+      @include susy-media(desktop) {
+        @include span(2 of $susy-desktop);
+      }
+    }
+
+    .footer-column__logo {
+      @include susy-media(mobiletablet) {
+        display: none;
+      }
+    }
+
+    .footer-column__social {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-column__second {
+      @include span(10 of $susy-desktop);
+      display: flex;
+      justify-content: space-between;
+
+      @include susy-media(mobiletablet) {
+        display: none;
+      }
+
+      li.menu-item {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .footer-bottom {
+
+    .footer-bottom__legal {
+      margin-bottom: 30px;
+
+      ul.menu {
+        @include susy-media(tablet) {
+          display: inline-flex;
+        }
+      }
+
+      li.menu-item {
+        padding: 10px 20px;
+      }
+    }
+    
+    .footer-bottom__copyright {
+      text-align: center;
+    }
+  }
+}
