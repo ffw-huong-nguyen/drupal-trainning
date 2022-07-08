@@ -1,0 +1,58 @@
+{
+  "blockExample": {
+    "items": {
+      "include()": {
+        "pattern": "components-block-example-items",
+        "with": {
+          "items": [
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-example-item",
+                  "with": {
+                    "blockExampleItem": {
+                      "counter": "350",
+                      "character": "+",
+                      "name": "Employees"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-example-item",
+                  "with": {
+                    "blockExampleItem": {
+                      "counter": "20",
+                      "character": "+",
+                      "name": "Patents"
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          ]
+        },
+        "only": true
+      }
+    },
+    "image": {
+      "include()": {
+        "pattern": "base-picture",
+        "with": {
+          "picture": {
+            "srcDesktop": "https://picsum.photos/1920/610",
+            "srcTablet": "https://picsum.photos/1024/610",
+            "src": "https://picsum.photos/768/430",
+            "alt": "Picture"
+          }
+        },
+        "only": true
+      }
+    }
+  }
+}

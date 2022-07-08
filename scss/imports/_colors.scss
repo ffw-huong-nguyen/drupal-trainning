@@ -3,24 +3,8 @@
 // Use http://chir.ag/projects/name-that-color/ for naming a color.
 
 $black: #000;
+$gray: #808080;
 $white: #fff;
-$red: #8c1515;
-$gray: #c6c9cc;
-$silver: #e4e8eb;
-$blue: #1381d7;
-$white-milk: #f4f4f4;
-$darken-white: #f0f3f5;
+$silver: #ccc;
 $pigeon-post: #aec9de;
-$pigeon-post-light: rgba($pigeon-post, 0.75);
-
-// Brand colors
-$primary-color: $blue;
-$text-color: $black;
-
-// Link color
-$link-color: $primary-color;
-$link-color-hover: $blue;
-
-// Button color
-$btn-color: $primary-color;
-$btn-color-hover: $white;
+$pigeon-post-light: rgba($pigeon-post, .75);

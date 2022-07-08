@@ -10,7 +10,7 @@
 @import 'imports/functions';
 @import 'imports/colors';
 @import 'imports/variables';
-@import 'imports/icons-variables';
+// @import 'imports/icons-variables';
 @import 'imports/mixins';
 
 // Reset
@@ -19,7 +19,7 @@
 // Base
 @import 'base/fonts';
 @import 'base/grid';
-@import 'base/icons';
+// @import 'base/icons';
 @import 'base/extends';
 @import 'base/typography';
 @import 'base/btn';
@@ -30,6 +30,4 @@
 
 // Layouts
 @import 'layouts/layout';
-@import 'layouts/navigation';
-@import 'layouts/header';
-@import 'layouts/footer';
+// @import 'layouts/navigation';

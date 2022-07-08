@@ -2,7 +2,7 @@
 // Import all webfonts here
 //https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 
-// Font Heading - Gilroy 500
+// EX
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Bold, 700, normal);
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Bold-Italic, 700, italic);
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-SemiBold, 600, normal);
@@ -13,29 +13,3 @@
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Italic, 400, italic);
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Light, 300, normal);
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Light-Italic, 300, italic);
-
-// Font default - ProximaNova
-@font-face {
-  font-family: 'ProximaNova';
-  src: url(./ProximaNova.eot);
-  src: url(./ProximaNova.eot?#iefix) format('embedded-opentype'),
-    url(./ProximaNova.otf) format('otf'),
-    url(./ProximaNova.svg#ProximaNova) format('svg'),
-    url(./ProximaNova.ttf) format('truetype'),
-    url(./ProximaNova.woff) format('woff'),
-    url(./ProximaNova.woff2) format('woff2');
-}
-
-// Font Quote - LibreBaskerville
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
-@font-face {
-  font-family: 'Libre Baskerville', serif;
-  src: url("https://use.typekit.net/af/275a7d/00000000000000007735b220/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"), url("https://use.typekit.net/af/275a7d/00000000000000007735b220/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"), url("https://use.typekit.net/af/275a7d/00000000000000007735b220/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
-  font-display: auto;
-  font-style: normal;
-  font-weight: 600;
-}
-
-// Icon Font
-@include font-face(icomoon, "fonts/icomoon");
