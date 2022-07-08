@@ -7,7 +7,19 @@
           "with": {
             "item": {
               "name": "$primary-color",
-              "id": "#ec1b23"
+              "id": "#1381d7"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-colors-item",
+          "with": {
+            "item": {
+              "name": "$secondary-color",
+              "id": "#1483dd"
             }
           },
           "only": true

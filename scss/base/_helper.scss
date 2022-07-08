@@ -1,0 +1,94 @@
+@import "extends";
+
+// Texts
+.text {
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--uppercase{
+    text-transform: uppercase;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+
+  // Dark Colors
+  &--dark {
+    color: $text-color;
+  }
+
+  // Light Colors
+  &--white {
+    color: $white;
+
+    a {
+      @extend %link--white;
+    }
+  }
+}
+
+// Backgrounds
+.bg {
+  // Dark backgrounds
+  &--primary {
+    background-color: $primary-color;
+  }
+
+  // Light backgrounds
+  &--white {
+    background-color: $white;
+  }
+
+  &--image {
+    background: url("https://picsum.photos/1920/610") no-repeat scroll 0 0 #0082BA;
+    background-position: center right;
+    color: $white;
+  }
+}
+
+.link-arrow {
+  a {
+    color: $black;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $blue;
+      i {
+        &:before {
+          content: "\e901";
+        }
+      }
+    }
+
+    i {
+      font-size: 15px;
+      padding-left: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 35px;
+
+      &:before {
+        vertical-align: middle;
+      }
+    }
+  }
+}

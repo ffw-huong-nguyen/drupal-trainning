@@ -1,5 +1,159 @@
+// .container {
+//   @include container();
+
+//   @include susy-media(tablet) {
+//     @include container($susy-tablet);
+//   }
+
+//   @include susy-media(desktop) {
+//     @include container($susy-desktop);
+//   }
+// }
+
+//Breakpoints
+$mobile-landscape: 400px;
+$mobile-only: 767px;
+$tablet: 768px;
+$tablet-only: 1023px;
+$desktop: 1024px;
+$desktop-only: 1279px;
+$desktop-wide: 1280px;
+$desktop-wide-only: 1439px;
+$desktop-superwide: 1440px;
+
+// Grid variables
+$container-margin-mobile: 30px;
+$container-margin-tablet: 30px;
+$container: 960px;
+$container-wide: 1083px;
+$container-superwide: 1083px;
+
+$column-mobile: 4;
+$column-tablet: 8;
+$column-desktop: 12;
+
+// Susy grid.
+$debug: false; // Set true to show the grid.
+$show-image: "hide";
+
+@if $debug==false {
+  $show-image: "hide";
+}
+
+@else {
+  $show-image: "show";
+}
+
+// Grid definition for all breakpoints. Use http://gridcalculator.dk/#/1200/12/52/20 to generate the grid.
+$susy: (flow: ltr,
+  math: fluid,
+  container-position: rem($container-margin-mobile),
+  container: auto,
+  columns: $column-mobile,
+  gutters: 15px / 44px,
+  column-width: false,
+  debug: (image: $show-image,
+    color: rgba($black, 0.25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$susy-tablet: (container-position: rem($container-margin-tablet),
+  container: auto,
+  columns: $column-tablet,
+  gutters: 38px / 59px,
+  column-width: false,
+  debug: (image: $show-image,
+    color: rgba($gray, 0.25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$susy-desktop: (columns: $column-desktop,
+  gutters: 36px / 62px,
+  container-position: center,
+  container: rem($container),
+  debug: (image: $show-image,
+    color: rgba($silver, 0.25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$susy-desktop-wide: (columns: $column-desktop,
+  gutters: 36px / 62px,
+  container-position: center,
+  container: rem($container-wide),
+  debug: (image: $show-image,
+    color: rgba($silver, 0.25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+$susy-desktop-superwide: (columns: $column-desktop,
+  gutters: 36px / 62px,
+  container-position: center,
+  container: rem($container-superwide),
+  debug: (image: $show-image,
+    color: rgba($silver, 0.25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+// Pick specific breakpoint.
+$susy-media: ( // max-width: 769px
+  mobileOnly: (media: screen,
+    max-width: em($tablet - 1) * 1em,
+  ),
+  // max-width: 899px
+  maxScreen900: (media: screen,
+    max-width: em(900px - 1) * 1em,
+  ),
+  // max-width: 1279px
+  desktop-only: (media: screen,
+    max-width: em($desktop-only) * 1em,
+  ),
+  // max-width: 1023px
+  mobileTabletOnly: (media: screen,
+    max-width: em($desktop - 1) * 1em,
+  ),
+  // max-width: 1023px
+  mobileLandscapeOnly: (media: screen,
+    max-width: em($mobile-landscape - 1) * 1em,
+  ),
+  // min-width: 480px
+  mobileLandscape: em($mobile-landscape) * 1em,
+  // min-width: 768px and max-width: 1999px
+  tabletOnly: (media: screen,
+    min-width: em($tablet) * 1em,
+    max-width: em($desktop - 1) * 1em,
+  ),
+  // min-width: 768px
+  tablet: em($tablet) * 1em,
+  // min-width: 1024px
+  desktop: em($desktop) * 1em,
+  // min-width: 1280px
+  desktopWide: em($desktop-wide) * 1em,
+  // min-width: 1440px
+  desktopSuperwide: em($desktop-superwide) * 1em);
+
 .container {
-  @include container();
+  max-width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  @include susy-media(mobileLandscapeOnly) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @include susy-media(mobileLandscape) {
+    @include container();
+  }
 
   @include susy-media(tablet) {
     @include container($susy-tablet);
@@ -7,5 +161,21 @@
 
   @include susy-media(desktop) {
     @include container($susy-desktop);
+  }
+
+  @include susy-media(desktopWide) {
+    @include container($susy-desktop-wide);
+  }
+
+  @include susy-media(desktopSuperwide) {
+    @include container($susy-desktop-superwide);
+  }
+
+  @media only screen and (min-width: 90em) {
+    max-width: 1440px;
+  }
+
+  @media only screen and (max-width: 1530px) and (min-width: 90em) {
+    margin: 0 30px;
   }
 }
