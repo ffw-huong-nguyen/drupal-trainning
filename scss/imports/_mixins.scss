@@ -30,8 +30,14 @@
   }
 }
 
-@mixin helvetica {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@mixin Gilroy {
+  font-family: "Gilroy", sans-serif;
+}
+@mixin ProximaNova {
+  font-family: "ProximaNova" , sans-serif;
+}
+@mixin LibreBaskerville {
+  font-family: "LibreBaskerville", sans-serif;
 }
 
 //Single image background with retina support

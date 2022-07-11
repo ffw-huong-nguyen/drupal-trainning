@@ -65,6 +65,11 @@
               "include()": {
                 "pattern": "components-block-banner"
               }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-slider"
+              }
             }
           ]
         }

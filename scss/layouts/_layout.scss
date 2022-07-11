@@ -15,7 +15,7 @@
 
 //Enable font-smoothing
 html {
-  @include helvetica;
+  @include ProximaNova;
   font-size: $base-font-size; // Don't modify static unit.
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

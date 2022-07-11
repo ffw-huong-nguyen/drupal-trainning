@@ -1,3 +1,15 @@
-<a target="{{ link.target|default('_blank') }}" class="{{ link.class }}" href="{{ link.href }}">{{ link.text }}</a>
-
-<a target="{{ link.target|default('_blank') }}" class="{{ link.class }}" href="{{ link.href }}">{{ link.text }}<span class="icon-arrow-right"></span></a>
+<div>
+  <a target="{{ link.target|default('_blank') }}" class="{{ link.class }}" href="{{ link.href }}">{{ link.text }}</a>
+</div>
+<div>
+  <a target="{{ link.target|default('_blank') }}" class="font--medium" href="{{ link.href }}">{{ link.text }}</a>
+</div>
+<div>
+  <a target="{{ link.target|default('_blank') }}" class="link--blue" href="{{ link.href }}">{{ link.text }}</a>
+</div>
+<div>
+  <a target="{{ link.target|default('_blank') }}" class="link--arrow font--medium" href="{{ link.href }}">{{ link.text }}<i class="icon-read-more"></i></a>
+</div>
+<div>
+  <a target="{{ link.target|default('_blank') }}" class="link--blue link--arrow font--medium" href="{{ link.href }}">{{ link.text }}<i class="icon-read-more"></i></a>
+</div>

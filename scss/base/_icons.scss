@@ -2,7 +2,7 @@
 // ICONS.
 
 %icons {
-  @include icomoon-ffw;
+  @include iconmoon;
 }
 
 [class^='icon-'],
@@ -12,21 +12,9 @@
   }
 }
 
-.icon-home {
+.icon-search2 {
   &:before {
-    content: $icon-home;
-  }
-}
-
-.icon-search {
-  &:before {
-    content: $icon-search;
-  }
-}
-
-.icon-twitter {
-  &:before {
-    content: $icon-twitter;
+    content: $icon-search2;
   }
 }
 
@@ -42,20 +30,20 @@
   }
 }
 
-.icon-arrow-down {
+.icon-twitter {
   &:before {
-    content: $icon-arrow-down;
+    content: $icon-twitter;
   }
 }
 
-.icon-arrow-link {
+.icon-quote {
   &:before {
-    content: $icon-arrow-link;
+    content: $icon-quote;
   }
 }
 
-.icon-arrow-right {
+.icon-read-more {
   &:before {
-    content: $icon-arrow-right;
+    content: $icon-read-more;
   }
 }

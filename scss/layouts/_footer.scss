@@ -1,13 +1,9 @@
-// Create a separate component, we need to require some variables and mixins.
-// Required imports
-@import '../imports/colors';
-@import '../imports/variables';
-
 .footer {
   padding: 80px 0;
 
-  a, p {
-    color: #727272;
+  a,
+  p {
+    color: $dark-gray;
   }
 
   .footer-column {
@@ -32,8 +28,12 @@
     }
 
     .footer-column__social {
-      display: flex;
-      justify-content: space-between;
+      ul.menu {
+        li {
+          float: left;
+          margin-right: 30px;
+        }
+      }
     }
 
     .footer-column__second {
@@ -52,11 +52,18 @@
   }
 
   .footer-bottom {
+    @include susy-media(desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
 
     .footer-bottom__legal {
       margin-bottom: 30px;
 
       ul.menu {
+        display: flex;
+        justify-content: space-between;
+
         @include susy-media(tablet) {
           display: inline-flex;
         }
@@ -66,7 +73,7 @@
         padding: 10px 20px;
       }
     }
-    
+
     .footer-bottom__copyright {
       text-align: center;
     }

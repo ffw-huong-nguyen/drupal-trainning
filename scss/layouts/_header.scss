@@ -1,17 +1,11 @@
-// Create a separate component, we need to require some variables and mixins.
-// Required imports
-@import '../imports/colors';
-@import '../imports/variables';
-
 .header {
-  
   .menu a {
     color: $black;
   }
 
   .header-top {
     width: 100%;
-    background-color: #c6c9cc;
+    background-color: $gray;
 
     @include susy-media(mobiletablet) {
       display: none;
@@ -19,6 +13,11 @@
 
     ul.menu {
       float: right;
+
+      @include susy-media(desktop) {
+        display: flex;
+        justify-content: space-between;
+      }
 
       li.menu-item {
         padding: 10px 20px;
@@ -44,7 +43,9 @@
     }
 
     .header-main__left {
+      display: flex;
       align-items: center;
+      justify-content: space-between;
 
       a {
         display: block;
@@ -87,6 +88,11 @@
       }
 
       ul.menu {
+        @include susy-media(desktop) {
+          display: flex;
+          justify-content: space-between;
+        }
+
         li.menu-item {
           padding: 10px 20px;
         }

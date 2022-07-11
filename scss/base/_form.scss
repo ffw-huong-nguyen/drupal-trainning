@@ -1,7 +1,17 @@
-button,
-input[type="submit"] {
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
+button {
   @extend .btn;
+}
+
+form {
+  display: flex;
+}
+
+input {
+  border: none;
+  padding-left: rem(20px);
+  width: rem(350px);
+
+  &::placeholder {
+    font-size: rem(14px);
+  }
 }

@@ -2,8 +2,8 @@
 // Import all webfonts here
 //https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 
-// Icon Font
-@include font-face(iconFFW, fonts/icomoon-ffw);
+// Icons
+@include font-face(iconmoon, fonts/icons/iconmoon, 400, normal);
 
 // Gilroy
 @include font-face(Gilroy, fonts/Gilroy/Gilroy-Black, 700, normal);
@@ -25,13 +25,6 @@
 @include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Regular, 400, normal);
 @include font-face(ProximaNova, fonts/ProximaNova/ProximaNova-Regular-Italic, 400, italic);
 
-
 // LibreBaskerville
-@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-Bold, 700, normal);
-@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-Bold-Italic, 700, italic);
-@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-SemiBold, 600, normal);
-@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-SemiBold-Italic, 600, italic);
-@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-Medium, 500, normal);
-@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-Medium-Italic, 500, italic);
-@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-Regular, 400, normal);
-@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-Regular-Italic, 400, italic);
+@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville, 500, normal);
+@include font-face(LibreBaskerville, fonts/LibreBaskerville/LibreBaskerville-Italic, 500, italic);

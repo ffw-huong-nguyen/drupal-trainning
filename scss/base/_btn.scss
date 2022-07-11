@@ -1,49 +1,51 @@
 %btn,
 .btn {
-  appearance: none;
-  background-image: none;
-  border-radius: 0;
-  border: 2px solid $blue;
-  box-shadow: none;
-  display: inline-block;
+  @include Gilroy;
   font-size: rem(18px);
-  line-height: 1;
-  outline: none;
-  padding: 15px 25px;
-  text-align: center;
-  text-shadow: none;
-  transition: all .5s ease;
+  font-weight: 600;
+  padding: rem(17px 37px);
   background-color: $blue;
   color: $white;
+  text-align: center;
+  width: 100%;
+  border: none;
   cursor: pointer;
-  outline: 0;
+
+  @include susy-media(tablet) {
+    width: unset;
+    display: inline-block;
+  }
 
   &:active,
   &:hover {
-    background-color: $blue;
-    border-color: $blue;
     color: $white;
+    background-image: radial-gradient(circle at 0 0,$blue, $navy);
   }
 
   &--radius {
-    border-radius: 50px;
-    padding: 10px 20px;
+    border-radius: rem(50px);
+  }
+
+  &--small {
+    font-size: rem(18px);
+    padding: rem(8px 20px);
+  }
+
+  &--medium {
+    padding: rem(17px 22px);
+  }
+
+  &--long {
+    font-size: rem(22px);
+    padding: rem(11px 65px);
   }
 
   &--white {
+    font-size: rem(18px);
+    border-radius: 3px;
+    padding: rem(15px 50px);
+    border: 3px solid $white;
     background-color: transparent;
-    border-color: $white;
     color: $white;
-
-    &:active,
-    &:hover {
-      background-color: $blue;
-      border-color: $blue;
-      color: $white;
-    }
   }
-}
-
-.link--arrow {
-
 }

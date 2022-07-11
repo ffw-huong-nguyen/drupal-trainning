@@ -52,3 +52,21 @@
   font-size: 90%;
   line-height: 1;
 }
+
+.icomoon {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.icomoon ul li {
+  list-style: none;
+  width: 33.33%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.icomoon__icon {
+  padding-right: 5px;
+  min-width: 30px;
+  display: inline-block;
+}
