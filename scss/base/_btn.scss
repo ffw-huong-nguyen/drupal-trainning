@@ -12,7 +12,7 @@
   cursor: pointer;
 
   @include susy-media(tablet) {
-    width: unset;
+    width: auto;
     display: inline-block;
   }
 
@@ -27,25 +27,18 @@
   }
 
   &--small {
-    font-size: rem(18px);
     padding: rem(8px 20px);
   }
 
-  &--medium {
-    padding: rem(17px 22px);
-  }
-
   &--long {
-    font-size: rem(22px);
-    padding: rem(11px 65px);
+    padding: rem(14px 40px);
+    min-width: rem(245px);
   }
 
-  &--white {
-    font-size: rem(18px);
-    border-radius: 3px;
-    padding: rem(15px 50px);
-    border: 3px solid $white;
-    background-color: transparent;
+  &--transparent {
     color: $white;
+    background-color: transparent;
+    border: rem(3px) solid $white;
+    border-radius: rem(3px);
   }
 }

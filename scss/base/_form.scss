@@ -1,17 +1,101 @@
-button {
+button,
+input[type="submit"] {
   @extend .btn;
 }
 
-form {
-  display: flex;
+%form-text {
+  @include ProximaNova;
+  font-size: rem(16px);
+  font-weight: 400;
+  height: rem(44px);
+  padding: rem(7px 20px);
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $dark-gray;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: $dark-gray;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $dark-gray;
+    opacity: 1;
+  }
+
+  &.error {
+    color: $red;
+    border-color: $red;
+
+    &::-webkit-input-placeholder {
+      color: $red;
+    }
+
+    &::-moz-placeholder {
+      color: $red;
+    }
+
+    &:-ms-input-placeholder {
+      color: $red;
+    }
+
+    &:-moz-placeholder {
+      color: $red;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
 }
 
-input {
-  border: none;
-  padding-left: rem(20px);
-  width: rem(350px);
+.form-select {
+  @include ProximaNova;
+  width: 100%;
+  height: rem(44px);
+  font-size: rem(16px);
+  padding: rem(7px 20px);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}
 
-  &::placeholder {
-    font-size: rem(14px);
+input[type="tel"],
+.form-email,
+.form-text {
+  @extend %form-text;
+}
+
+.form-textarea {
+  @extend %form-text;
+  padding: rem(12px 25px);
+  height: auto;
+}
+
+.form-item,
+.form-actions {
+  margin: rem(0 0 14px);
+
+  &.form-type-checkbox,
+  &.form-type-radio {
+    margin-bottom: rem(8px);
+  }
+}
+
+fieldset {
+  legend {
+    margin-bottom: rem(15px);
   }
 }

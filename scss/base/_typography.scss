@@ -9,11 +9,12 @@ h5,
 h6 {
   @include Gilroy;
   font-weight: 500;
-  line-height: 1.3;
-  margin-bottom: rem(18px);
+  line-height: 1.7;
+  margin-bottom: rem(15px);
 }
 
-.h1, h1 {
+.h1,
+h1 {
   font-size: rem(30px);
   line-height: 1.35;
   letter-spacing: rem(0.5px);
@@ -25,7 +26,8 @@ h6 {
   }
 }
 
-.h2, h2 {
+.h2,
+h2 {
   font-size: rem(30px);
   line-height: 1.4;
   letter-spacing: rem(1.25px);
@@ -36,7 +38,8 @@ h6 {
   }
 }
 
-.h3, h3 {
+.h3,
+h3 {
   font-size: rem(25px);
   letter-spacing: rem(-0.5px);
 
@@ -46,7 +49,8 @@ h6 {
   }
 }
 
-.h4, h4 {
+.h4,
+h4 {
   font-size: rem(18px);
 
   @include susy-media(tablet) {
@@ -54,18 +58,67 @@ h6 {
   }
 }
 
-.h5, h5 {
-  font-size: 1rem;
+.h5,
+h5 {
+  font-size: rem(18px);
 }
 
-.h6, h6 {
-  font-size: rem(14px);
+.h6,
+h6 {
+  font-size: rem(18px);
 }
 
 p {
   font-size: rem(18px);
   line-height: 1.65;
   margin-bottom: rem(15px);
+}
+
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+sup {
+  vertical-align: super;
+}
+
+small {
+  font-size: smaller;
+}
+
+abbr {
+  border-bottom: 1px dotted $black;
+  cursor: help;
+}
+
+tt,
+code,
+kbd,
+samp {
+  font-family: monospace;
+}
+
+blockquote {
+  @include LibreBaskerville;
+  font-style: italic;
+  display: block;
+
+  &:before {
+    content: '\e980';
+    color: $blue;
+    display: block;
+    margin-bottom: 15px;
+  }
 }
 
 %link,
@@ -107,57 +160,37 @@ a {
   @extend %link;
 }
 
-em {
-  font-style: italic;
-}
-
-b,
-strong,
-label {
-  font-weight: 700;
-}
-
-sub {
-  vertical-align: sub;
-  font-size: smaller;
-}
-
-sup {
-  vertical-align: super;
-}
-
-small {
-  font-size: smaller;
-}
-
-abbr {
-  border-bottom: 1px dotted $black;
-  cursor: help;
-}
-
-tt,
-code,
-kbd,
-samp {
-  font-family: monospace;
-}
-
-%list,
 ol,
 ul {
+  margin-bottom: rem(25px);
+
   li {
+    font-size: rem(18px);
     margin-bottom: rem(15px);
   }
 }
 
-blockquote {
-  @include LibreBaskerville;
-  font-style: italic;
-  display: block;
+%list,
+.list {
+  ul {
+    li {
+      padding-left: rem(35px);
+      margin-bottom: rem(13px);
+      position: relative;
+  
+      &:before {
+        content: '\2022';
+        position: absolute;
+        display: block;
+        top: rem(-10px);
+        left: 0;
+        position: absolute;
+        margin-top: rem(8px);
+      }
+    }
+  }
 
-  .icon-quote:before {
-    color: $blue;
-    display: block;
-    margin-bottom: 15px;
+  ol {
+    list-style: circle;
   }
 }
