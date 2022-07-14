@@ -11,13 +11,13 @@ table {
 
 td,
 th {
-  border-bottom: rem(1px) solid $black;
+  border-bottom: rem(1px) solid $text-color;
   min-width: rem(120px);
   padding: rem(10px 18px);
   vertical-align: top;
 
   tbody tr:first-of-type & {
-    border-top: rem(1px) solid $black;
+    border-top: rem(1px) solid $text-color;
   }
 }
 

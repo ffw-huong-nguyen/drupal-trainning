@@ -94,6 +94,9 @@
   user-select: none;
 }
 
+@mixin gradient($direction, $color1, $color2) {
+  background-image: radial-gradient($direction at 0 0, $color1, $color2);
+}
 
 // Clearfix as mixin.
 @mixin clearfix {

@@ -4,7 +4,7 @@
   font-size: rem(18px);
   font-weight: 600;
   padding: rem(17px 37px);
-  background-color: $blue;
+  background-color: $primary-color;
   color: $white;
   text-align: center;
   width: 100%;
@@ -19,7 +19,7 @@
   &:active,
   &:hover {
     color: $white;
-    background-image: radial-gradient(circle at 0 0,$blue, $navy);
+    @include gradient(circle, $primary-color, $secondary-color);
   }
 
   &--radius {

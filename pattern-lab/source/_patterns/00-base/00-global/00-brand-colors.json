@@ -30,18 +30,6 @@
           "pattern": "base-colors-item",
           "with": {
             "item": {
-              "name": "$black",
-              "id": "#222"
-            }
-          },
-          "only": true
-        }
-      },
-      {
-        "include()": {
-          "pattern": "base-colors-item",
-          "with": {
-            "item": {
               "name": "$gray",
               "id": "#eee"
             }

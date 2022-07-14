@@ -51,7 +51,7 @@ h3 {
 
 .h4,
 h4 {
-  font-size: rem(18px);
+  font-size: rem(20px);
 
   @include susy-media(tablet) {
     font-size: rem(22px);
@@ -60,7 +60,7 @@ h4 {
 
 .h5,
 h5 {
-  font-size: rem(18px);
+  font-size: rem(19px);
 }
 
 .h6,
@@ -97,7 +97,7 @@ small {
 }
 
 abbr {
-  border-bottom: 1px dotted $black;
+  border-bottom: 1px dotted $text-color;
   cursor: help;
 }
 
@@ -114,8 +114,9 @@ blockquote {
   display: block;
 
   &:before {
-    content: '\e980';
-    color: $blue;
+    @extend %icons;
+    content: $icon-quote;
+    color: $secondary-color;
     display: block;
     margin-bottom: 15px;
   }
@@ -123,35 +124,59 @@ blockquote {
 
 %link,
 .link {
-  color: $black;
+  color: $link-color;
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
 
   &:active,
   &:hover {
-    color: $blue;
-  }
-
-  &--blue {
-    color: $blue;
+    color: $link-color-hover;
   }
 
   &--arrow {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-  
-    i {
-      color: $blue;
+
+    &:after {
+      @extend %icons;
+      content: $icon-read-more;
       margin-left: 8px;
-      display: flex;
+      color: $link-color;
+      transition: all 0.3s ease;
     }
   
+    &:active,
     &:hover {
-      i {
-        margin-left: 12px;
-        transition: all 0.3s ease;
+      &:after {
+        color: $link-color-hover;
       }
+    }
+  }
+
+  &--white {
+    color: $white;
+
+    &:after {
+      color: $white;
+    }
+
+    &:active,
+    &:hover {
+      color: $secondary-color;
+
+      &:after {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  &.link--text {
+    color: $text-color;
+
+    &:active,
+    &:hover {
+      color: $link-color-hover;
     }
   }
 }
@@ -162,35 +187,50 @@ a {
 
 ol,
 ul {
-  margin-bottom: rem(25px);
-
   li {
-    font-size: rem(18px);
     margin-bottom: rem(15px);
   }
 }
 
 %list,
 .list {
-  ul {
-    li {
-      padding-left: rem(35px);
-      margin-bottom: rem(13px);
-      position: relative;
-  
-      &:before {
-        content: '\2022';
-        position: absolute;
-        display: block;
-        top: rem(-10px);
-        left: 0;
-        position: absolute;
-        margin-top: rem(8px);
-      }
+  li {
+    padding-left: rem(35px);
+    margin-bottom: rem(13px);
+    position: relative;
+
+    &:before {
+      content: '\2022';
+      position: absolute;
+      display: block;
+      top: rem(-10px);
+      left: 0;
+      position: absolute;
+      margin-top: rem(8px);
     }
+  }
+}
+
+%list--ol,
+.list--ol {
+  list-style: decimal;
+  padding: rem(0 18px);
+
+  li {
+    padding-left: rem(15px);
+
+    &:before {
+      content: none;
+    }
+  }
+}
+
+.list--wrap {
+  ul {
+    @extend %list;
   }
 
   ol {
-    list-style: circle;
+    @extend %list--ol;
   }
 }

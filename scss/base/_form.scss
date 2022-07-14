@@ -17,17 +17,17 @@ input[type="submit"] {
   }
 
   &::-webkit-input-placeholder {
-    color: $dark-gray;
+    color: $text-color;
     opacity: 1;
   }
 
   &::-moz-placeholder {
-    color: $dark-gray;
+    color: $text-color;
     opacity: 1;
   }
 
   &:-ms-input-placeholder {
-    color: $dark-gray;
+    color: $text-color;
     opacity: 1;
   }
 
@@ -61,7 +61,7 @@ input[type="submit"] {
   }
 }
 
-.form-select {
+select {
   @include ProximaNova;
   width: 100%;
   height: rem(44px);
@@ -73,12 +73,13 @@ input[type="submit"] {
 }
 
 input[type="tel"],
-.form-email,
-.form-text {
+input[type="text"],
+input[type="email"],
+input[type="number"] {
   @extend %form-text;
 }
 
-.form-textarea {
+textarea {
   @extend %form-text;
   padding: rem(12px 25px);
   height: auto;
@@ -87,9 +88,11 @@ input[type="tel"],
 .form-item,
 .form-actions {
   margin: rem(0 0 14px);
+}
 
-  &.form-type-checkbox,
-  &.form-type-radio {
+.form-checkboxes,
+.form-radios {
+  .form-item {
     margin-bottom: rem(8px);
   }
 }
