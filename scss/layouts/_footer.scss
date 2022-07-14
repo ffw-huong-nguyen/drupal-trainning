@@ -1,76 +1,113 @@
 .footer {
-  padding: 80px 0;
+  padding: rem(60px 0);
 
-  .footer-column {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+  a {
+    @extend %link--text;
+    font-size: rem(12px);
 
-    .footer-column__title {
-      text-transform: uppercase;
+    @include susy-media(desktop) {
+      font-size: rem(14px);
     }
+  }
+}
 
-    .footer-column__first {
-      @include susy-media(desktop) {
-        @include span(2 of $susy-desktop);
+// footer column
+.footer-column {
+  @include susy-media(desktop) {
+    margin-bottom: rem(40px);
+  }
+
+  .block-footer-menu {
+    @include susy-media(desktop) {
+      @include span(2 of $susy-desktop);
+
+      &:last-child {
+        margin-right: 0;
       }
     }
 
-    .footer-column__logo {
-      @include susy-media(mobiletablet) {
-        display: none;
-      }
-    }
-
-    .footer-column__social {
-      ul.menu {
-        li {
-          float: left;
-          margin-right: 30px;
-        }
-      }
-    }
-
-    .footer-column__second {
-      @include span(10 of $susy-desktop);
-      display: flex;
-      justify-content: space-between;
-
-      @include susy-media(mobiletablet) {
-        display: none;
-      }
-
-      li.menu-item {
-        margin-bottom: 20px;
+    ul.menu {
+      li {
+        margin-bottom: 17px;
       }
     }
   }
+}
 
-  .footer-bottom {
-    @include susy-media(desktop) {
-      display: flex;
-      justify-content: space-between;
+.footer-column__title {
+  text-transform: uppercase;
+}
+
+.footer-column__logo {
+  line-height: 0;
+  margin-bottom: 30px;
+}
+
+.footer-column__social {
+  @include susy-media(mobiletablet) {
+    text-align: center;
+  }
+
+  a {
+    margin-right: rem(35px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// footer bottom
+.footer-bottom {
+  @include susy-media(desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer-bottom__legal {
+  width: 100%;
+
+  @include susy-media(desktop) {
+    @include span(6 of $susy-tablet);
+  }
+
+  @include susy-media(desktop) {
+    @include span(10 of $susy-desktop);
+  }
+
+  ul.menu {
+    display: flex;
+    align-items: center;
+
+    @include susy-media(mobiletablet) {
+      justify-content: center;
     }
 
-    .footer-bottom__legal {
-      margin-bottom: 30px;
+    li {
+      padding: rem(10px 6px);
 
-      ul.menu {
-        display: flex;
-        justify-content: space-between;
-
-        @include susy-media(tablet) {
-          display: inline-flex;
-        }
+      &:first-child {
+        padding-left: 0;
       }
 
-      li.menu-item {
-        padding: 10px 20px;
+      &:last-child {
+        padding-right: 0;
+      }
+        
+      a {
+        font-size: rem(12px);
       }
     }
+  }
+}
 
-    .footer-bottom__copyright {
-      text-align: center;
-    }
+.footer-bottom__copyright {
+  @include susy-media(mobiletablet) {
+    text-align: center;
+  }
+
+  span {
+    font-size: rem(12px);
   }
 }

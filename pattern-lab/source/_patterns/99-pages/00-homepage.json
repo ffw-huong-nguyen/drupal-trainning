@@ -13,18 +13,18 @@
           "items": [
             {
               "include()": {
-                "pattern": "components-block-example",
+                "pattern": "components-block-banner",
                 "with": {
                   "blockExample": {
                     "items": {
                       "include()": {
-                        "pattern": "components-block-example-items",
+                        "pattern": "components-block-banner-items",
                         "with": {
                           "items": [
                             {
                               "content": {
                                 "include()": {
-                                  "pattern": "components-block-example-item",
+                                  "pattern": "components-block-banner-item",
                                   "with": {
                                     "blockExampleItem": {
                                       "counter": "350",
@@ -39,7 +39,7 @@
                             {
                               "content": {
                                 "include()": {
-                                  "pattern": "components-block-example-item",
+                                  "pattern": "components-block-banner-item",
                                   "with": {
                                     "blockExampleItem": {
                                       "counter": "20",
@@ -59,11 +59,6 @@
                   }
                 },
                 "only": true
-              }
-            },
-            {
-              "include()": {
-                "pattern": "components-block-banner"
               }
             }
           ]

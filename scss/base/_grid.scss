@@ -8,16 +8,20 @@
   @include susy-media(desktop) {
     @include container($susy-desktop);
   }
+
+  @include susy-media(desktopWide) {
+    @include container($susy-desktop-wide);
+  }
 }
 
-.container--large {
-  @include container();
-
-  @include susy-media(tablet) {
-    @include container($susy-tablet);
+.container.container--large {
+  @include susy-media(desktopToSuperWide) {
+    margin-left: 30px;
+    margin-right: 30px;
+    max-width: inherit;
   }
 
-  @include susy-media(desktop) {
-    @include container($susy-desktop-wide);
+  @include susy-media(desktopSuperWide) {
+    @include container($susy-desktop-superwide);
   }
 }

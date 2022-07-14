@@ -1,0 +1,101 @@
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/mixins';
+
+.banner {
+  position: relative;
+}
+
+.banner-bg {
+  line-height: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.banner-content {
+  @include susy-media(desktopWide) {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.banner-content__wrap {
+  @include susy-media(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.banner-content__left {
+  @include susy-media(desktop) {
+    width: 50%;
+  }
+}
+
+.banner-content__form {
+  margin-bottom: 25px;
+
+  form {
+    @include susy-media(desktop) {
+      display: flex;
+    }
+
+    input {
+      height: auto;
+      margin-right: 0;
+
+      @include susy-media(desktop) {
+        width: 60%;
+      }
+    }
+
+    button {
+      padding: rem(18px 10px);
+
+      @include susy-media(desktop) {
+        width: 40%;
+      }
+    }
+  }
+}
+
+.banner-content__links {
+  display: flex;
+  margin-bottom: 30px;
+
+  .prefix {
+    color: $primary-color;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 13px;
+    text-transform: uppercase;
+    border: rem(1px) solid $primary-color;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+}
+
+.banner-content__slider {
+  @include susy-media(desktop) {
+    width: 32%;
+  }
+}
+
+.slider-item {
+  position: relative;
+
+  .slider-image--small {
+    position: absolute;
+    bottom: -40px;
+    left: 43%;
+  }
+}

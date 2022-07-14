@@ -59,3 +59,21 @@
 .clearfix {
   @include clearfix;
 }
+
+.hidden-mobile {
+  @include susy-media(mobileOnly) {
+    display: none;
+  }
+}
+
+.hidden-tablet {
+  @include susy-media(mobiletablet) {
+    display: none;
+  }
+}
+
+.hidden-desktop {
+  @include susy-media(desktop) {
+    display: none;
+  }
+}

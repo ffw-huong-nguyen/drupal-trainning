@@ -94,7 +94,7 @@ small {
 }
 
 abbr {
-  border-bottom: 1px dotted $text-color;
+  border-bottom: rem(1px) dotted $text-color;
   cursor: help;
 }
 
@@ -124,6 +124,7 @@ blockquote {
   color: $link-color;
   text-decoration: none;
   transition: all 0.3s ease;
+  display: inline-block;
   cursor: pointer;
 
   &:active,
@@ -138,7 +139,7 @@ blockquote {
     &:after {
       @extend %icons;
       content: $icon-read-more;
-      margin-left: 8px;
+      margin-left: rem(8px);
       color: $link-color;
       transition: all 0.3s ease;
     }
