@@ -153,11 +153,6 @@ blockquote {
 
   &--text {
     color: $text-color;
-
-    &:active,
-    &:hover {
-      color: $link-color-hover;
-    }
   }
 
   &--white {

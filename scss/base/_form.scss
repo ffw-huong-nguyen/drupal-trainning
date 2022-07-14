@@ -61,17 +61,6 @@ input[type="submit"] {
   }
 }
 
-select {
-  @include ProximaNova;
-  width: 100%;
-  height: rem(44px);
-  font-size: rem(16px);
-  padding: rem(7px 20px);
-  transition: all 0.3s ease-in-out;
-  display: inline-block;
-  cursor: pointer;
-}
-
 input[type="tel"],
 input[type="text"],
 input[type="email"],
@@ -85,6 +74,23 @@ textarea {
   height: auto;
 }
 
+select {
+  @include ProximaNova;
+  width: 100%;
+  height: rem(44px);
+  font-size: rem(16px);
+  padding: rem(7px 20px);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}
+
+fieldset {
+  legend {
+    margin-bottom: rem(15px);
+  }
+}
+
 .form-item,
 .form-actions {
   margin: rem(0 0 14px);
@@ -94,11 +100,5 @@ textarea {
 .form-radios {
   .form-item {
     margin-bottom: rem(8px);
-  }
-}
-
-fieldset {
-  legend {
-    margin-bottom: rem(15px);
   }
 }

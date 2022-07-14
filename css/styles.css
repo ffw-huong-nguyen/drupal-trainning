@@ -475,10 +475,6 @@ a,
   
   .link--text {
     color: #333; }
-    
-    .link--text:active,
-    .link--text:hover {
-      color: #1065a8; }
   
   .link--white {
     color: #fff; }
@@ -665,6 +661,10 @@ input[type="number"], textarea {
   input[disabled][type="number"], textarea[disabled] {
     cursor: not-allowed; }
 
+textarea {
+  padding: 0.75rem 1.5625rem;
+  height: auto; }
+
 select {
   font-family: "ProximaNova" , sans-serif;
   width: 100%;
@@ -675,9 +675,8 @@ select {
   display: inline-block;
   cursor: pointer; }
 
-textarea {
-  padding: 0.75rem 1.5625rem;
-  height: auto; }
+fieldset legend {
+  margin-bottom: 0.9375rem; }
 
 .form-item,
 .form-actions {
@@ -686,9 +685,6 @@ textarea {
 .form-checkboxes .form-item,
 .form-radios .form-item {
   margin-bottom: 0.5rem; }
-
-fieldset legend {
-  margin-bottom: 0.9375rem; }
 
 .bg--primary {
   background-color: #1481d7; }
