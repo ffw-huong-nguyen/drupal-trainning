@@ -10,6 +10,7 @@ h6 {
   @include Gilroy;
   font-weight: 500;
   line-height: 1.7;
+  color: $black;
   margin-bottom: rem(15px);
 }
 
@@ -51,16 +52,12 @@ h3 {
 
 .h4,
 h4 {
-  font-size: rem(20px);
-
-  @include susy-media(tablet) {
-    font-size: rem(22px);
-  }
+  font-size: rem(22px);
 }
 
 .h5,
 h5 {
-  font-size: rem(19px);
+  font-size: rem(20px);
 }
 
 .h6,
@@ -118,7 +115,7 @@ blockquote {
     content: $icon-quote;
     color: $secondary-color;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
   }
 }
 
@@ -154,6 +151,15 @@ blockquote {
     }
   }
 
+  &--text {
+    color: $text-color;
+
+    &:active,
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+
   &--white {
     color: $white;
 
@@ -163,33 +169,17 @@ blockquote {
 
     &:active,
     &:hover {
-      color: $secondary-color;
+      color: darken($white, 20%);
 
       &:after {
-        color: $secondary-color;
+        color: darken($white, 20%);
       }
-    }
-  }
-
-  &.link--text {
-    color: $text-color;
-
-    &:active,
-    &:hover {
-      color: $link-color-hover;
     }
   }
 }
 
 a {
   @extend %link;
-}
-
-ol,
-ul {
-  li {
-    margin-bottom: rem(15px);
-  }
 }
 
 %list,
@@ -209,23 +199,22 @@ ul {
       margin-top: rem(8px);
     }
   }
-}
 
-%list--ol,
-.list--ol {
-  list-style: decimal;
-  padding: rem(0 18px);
-
-  li {
-    padding-left: rem(15px);
-
-    &:before {
-      content: none;
+  &--ol {
+    list-style: decimal;
+    padding: rem(0 18px);
+  
+    li {
+      padding-left: rem(15px);
+  
+      &:before {
+        content: none;
+      }
     }
   }
 }
 
-.list--wrap {
+.list-wrap {
   ul {
     @extend %list;
   }

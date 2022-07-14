@@ -9,14 +9,14 @@ $blue: #1481d7;
 $silver: #ccc;
 $red: red;
 $gray: #eee;
-$dark-gray: #727272;
+$gray-33: #333;
 $pigeon-post: #aec9de;
 $pigeon-post-light: rgba($pigeon-post, .75);
 
 // Brand colors
 $primary-color: $blue;
 $secondary-color: $navy;
-$text-color: lighten($black, 10%);
+$text-color: $gray-33;
 
 // Link color
 $link-color: $primary-color;

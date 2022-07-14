@@ -79,11 +79,10 @@ $susy-desktop: (
   ),
 );
 
+// fixed container on desktop-wide
 $susy-desktop-wide: (
-  columns: $column-desktop-wide,
-  gutters: 36px / 62px,
-  container-position: rem($container-margin * 4),
-  container: auto,
+  container-position: center,
+  container: rem($container-desktop-wide),
   debug: (
     image: $show-image,
     color: rgba($silver, .25),

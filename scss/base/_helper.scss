@@ -1,6 +1,6 @@
 .bg {
-  &--blue {
-    background-color: $btn-bg-color;
+  &--primary {
+    background-color: $primary-color;
   }
 
   &--white {
@@ -41,6 +41,10 @@
 
   &--right {
     text-align: right;
+  }
+
+  &--white {
+    color: $white;
   }
 
   &--uppercase {
