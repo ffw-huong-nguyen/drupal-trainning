@@ -319,6 +319,12 @@ iframe {
 .icon-read-more:before {
   content: ""; }
 
+.icon-chevron-thin-right:before {
+  content: ""; }
+
+.icon-chevron-thin-left:before {
+  content: ""; }
+
 h1,
 h2,
 h3,
@@ -329,7 +335,7 @@ h6 {
   font-weight: 500;
   line-height: 1.7;
   color: #000;
-  margin-bottom: 0.9375rem; }
+  margin-bottom: 1.25rem; }
 
 .h1,
 h1 {

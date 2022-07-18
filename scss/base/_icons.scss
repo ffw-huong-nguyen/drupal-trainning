@@ -47,3 +47,15 @@
     content: $icon-read-more;
   }
 }
+
+.icon-chevron-thin-right {
+  &:before {
+    content: $icon-chevron-thin-right;
+  }
+}
+
+.icon-chevron-thin-left {
+  &:before {
+    content: $icon-chevron-thin-left;
+  }
+}

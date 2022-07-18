@@ -20,18 +20,34 @@
 }
 
 .banner-content {
-  @include susy-media(desktopWide) {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .banner-content__wrap {
   @include susy-media(desktop) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.banner-content__title {
+  @include susy-media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.banner-content__description {
+  p {
+    font-size: rem(24px);
+    letter-spacing: -0.3px;
+    line-height: 1.5;
+  }
+
+  @include susy-media(desktop) {
+    margin-bottom: 40px;
   }
 }
 
@@ -42,19 +58,24 @@
 }
 
 .banner-content__form {
-  margin-bottom: 25px;
+  margin-bottom: rem(30px);
 
   form {
     @include susy-media(desktop) {
       display: flex;
+      margin-bottom: rem(25px);
     }
 
     input {
       height: auto;
+      padding: rem(20px);
+      border: none;
       margin-right: 0;
+      margin-bottom: rem(10px);
 
       @include susy-media(desktop) {
         width: 60%;
+        margin-bottom: 0;
       }
     }
 
@@ -70,17 +91,21 @@
 
 .banner-content__links {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: rem(40px);
+
+  @include susy-media(desktop) {
+    margin-bottom: rem(30px);
+  }
 
   .prefix {
     color: $primary-color;
-    font-size: 12px;
+    font-size: rem(12px);
     line-height: 1;
-    padding: 5px 13px;
+    padding: rem(5px 13px);
     text-transform: uppercase;
     border: rem(1px) solid $primary-color;
-    border-radius: 6px;
-    margin-right: 10px;
+    border-radius: rem(6px);
+    margin-right: rem(10px);
   }
 }
 
@@ -88,14 +113,40 @@
   @include susy-media(desktop) {
     width: 32%;
   }
-}
 
-.slider-item {
-  position: relative;
+  .js-banner-slider {
+    position: relative;
+  }
 
-  .slider-image--small {
+  .slick-arrow {
     position: absolute;
-    bottom: -40px;
-    left: 43%;
+    background: white;
+    padding: rem(15px);
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    line-height: 1;
+    cursor: pointer;
+
+    &.left {
+      right: rem(47px);
+    }
+  }
+
+  .slider-item {
+    position: relative;
+    padding-bottom: 48px;
+
+    .slider-image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .slider-image--small {
+      position: absolute;
+      right: rem(93px);
+      bottom: 0;
+    }
   }
 }
