@@ -1,0 +1,158 @@
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/mixins';
+
+.slider {
+  background: $white;
+  padding-top: rem(40px);
+
+  @include susy-media(desktop) {
+    padding-top: 0;
+  }
+}
+
+.slider-wrap {
+  @include susy-media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+
+    .block-slider-quotes {
+      order: 2;
+    }
+  }
+}
+
+.slider-title {
+  position: relative;
+  letter-spacing: 1px;
+  padding-bottom: rem(7px);
+  margin-bottom: rem(40px);
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: rem(45px);
+    height: rem(2px);
+    background: $primary-color;
+  }
+
+  @include susy-media(tablet) {
+    font-size: rem(34px);
+    line-height: 1.4;
+    max-width: 88%;
+
+    &:after {
+      width: rem(60px);
+    }
+  }
+}
+
+.block-slider-logos {
+  padding: rem(30px 0 50px);
+
+  @include susy-media(desktop) {
+    width: 60%;
+    padding: rem(80px 0);
+  }
+
+  .slider-logos {
+    @include susy-media(desktop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .slider-logos__item {
+    width: calc((100% - 20px) / 2);
+    cursor: pointer;
+
+    @include susy-media(tablet) {
+      width: calc((100% - 30px) / 4);
+    }
+
+    @include susy-media(desktop) {
+      width: calc((100% - 30px) / 3);
+      margin-bottom: rem(30px);
+    }
+  }
+
+  .slick-dots {
+    bottom: rem(-35px);
+
+    li {
+      margin: rem(0 1px);
+  
+      button:before {
+        font-size: rem(30px);
+      }
+  
+      &.slick-active button:before {
+        color: $primary-color;
+        font-size: rem(42px);
+      }
+    }
+  }
+}
+
+.block-slider-quotes {
+  padding: rem(40px 0);
+  margin-left: -10px;
+  margin-right: -10px;
+
+  @include susy-media(tablet) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  @include susy-media(desktop) {
+    width: 40%;
+    margin: auto;
+    padding: rem(100px 0);
+  }
+}
+
+.slider-quotes {
+  margin: rem(0 10px);
+
+  @include susy-media(tablet) {
+    margin: rem(0 20px);
+  }
+
+  @include susy-media(desktop) {
+    margin: 0;
+  }
+}
+
+.slider-quotes__item {
+  @include susy-media(desktop) {
+    padding: rem(10px 0 80px 70px);
+  }
+
+  @include susy-media(desktopWide) {
+    padding: rem(80px 70px);
+  }
+}
+
+.slider-quotes__author {
+  color: white;
+  font-size: rem(30px);
+  margin-bottom: rem(15px);
+
+  @include susy-media(desktop) {
+    font-size: rem(37px);
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: rem(40px);
+  }
+}
+
+.slider-quotes__link {
+  margin-top: rem(25px);
+  font-size: rem(18px);
+}

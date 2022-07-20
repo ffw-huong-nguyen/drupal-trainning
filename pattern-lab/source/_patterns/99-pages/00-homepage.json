@@ -14,50 +14,12 @@
             {
               "include()": {
                 "pattern": "components-block-banner",
-                "with": {
-                  "blockExample": {
-                    "items": {
-                      "include()": {
-                        "pattern": "components-block-banner-items",
-                        "with": {
-                          "items": [
-                            {
-                              "content": {
-                                "include()": {
-                                  "pattern": "components-block-banner-item",
-                                  "with": {
-                                    "blockExampleItem": {
-                                      "counter": "350",
-                                      "character": "+",
-                                      "name": "Employees test"
-                                    }
-                                  },
-                                  "only": true
-                                }
-                              }
-                            },
-                            {
-                              "content": {
-                                "include()": {
-                                  "pattern": "components-block-banner-item",
-                                  "with": {
-                                    "blockExampleItem": {
-                                      "counter": "20",
-                                      "character": "+",
-                                      "name": "Patents test"
-                                    }
-                                  },
-                                  "only": true
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        "only": true
-                      }
-                    }
-                  }
-                },
+                "only": true
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-slider",
                 "only": true
               }
             }

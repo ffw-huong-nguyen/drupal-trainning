@@ -24,8 +24,12 @@
         -ms-flex-pack: justify;
             justify-content: space-between; } }
 
-@media (min-width: 64em) {
+@media (min-width: 48em) {
   .banner-content__title {
+    margin-bottom: 40px; } }
+
+@media (min-width: 48em) {
+  .banner-content__description {
     margin-bottom: 40px; } }
 
 .banner-content__description p {
@@ -34,16 +38,12 @@
   line-height: 1.5; }
 
 @media (min-width: 64em) {
-  .banner-content__description {
-    margin-bottom: 40px; } }
-
-@media (min-width: 64em) {
   .banner-content__left {
-    width: 50%; } }
+    width: 52%; } }
 
 .banner-content__form {
   margin-bottom: 1.875rem; }
-  @media (min-width: 64em) {
+  @media (min-width: 48em) {
     .banner-content__form form {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -55,13 +55,19 @@
     border: none;
     margin-right: 0;
     margin-bottom: 0.625rem; }
-    @media (min-width: 64em) {
+    @media (min-width: 48em) {
       .banner-content__form form input {
-        width: 60%;
+        width: 44%;
         margin-bottom: 0; } }
+    @media (min-width: 80em) {
+      .banner-content__form form input {
+        width: 60%; } }
   .banner-content__form form button {
     padding: 1.125rem 0.625rem; }
     @media (min-width: 64em) {
+      .banner-content__form form button {
+        width: 51%; } }
+    @media (min-width: 80em) {
       .banner-content__form form button {
         width: 40%; } }
 
@@ -70,20 +76,24 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2.5rem; }
-  @media (min-width: 64em) {
+  @media (min-width: 48em) {
     .banner-content__links {
-      margin-bottom: 1.875rem; } }
+      margin-bottom: 5rem; } }
   .banner-content__links .prefix {
     color: #1481d7;
     font-size: 0.75rem;
     line-height: 1;
     padding: 0.3125rem 0.8125rem;
-    text-transform: uppercase;
     border: 0.0625rem solid #1481d7;
+    text-transform: uppercase;
     border-radius: 0.375rem;
     margin-right: 0.625rem; }
 
 @media (min-width: 64em) {
+  .banner-content__slider {
+    width: 40%; } }
+
+@media (min-width: 80em) {
   .banner-content__slider {
     width: 32%; } }
 
@@ -106,7 +116,10 @@
   position: relative;
   padding-bottom: 48px; }
   .banner-content__slider .slider-item .slider-image img {
-    width: 100%; }
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 400px; }
   .banner-content__slider .slider-item .slider-image--small {
     position: absolute;
     right: 5.8125rem;

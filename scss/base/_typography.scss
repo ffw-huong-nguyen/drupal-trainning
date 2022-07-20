@@ -1,12 +1,12 @@
 // TYPOGRAPHY
 // Define all typographic styles in this file.
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
   @include Gilroy;
   font-weight: 500;
   line-height: 1.7;
@@ -107,7 +107,9 @@ samp {
 
 blockquote {
   @include LibreBaskerville;
+  font-size: rem(20px);
   font-style: italic;
+  line-height: 1.7;
   display: block;
 
   &:before {
@@ -115,7 +117,16 @@ blockquote {
     content: $icon-quote;
     color: $secondary-color;
     display: block;
-    margin-bottom: rem(15px);
+    margin-bottom: rem(30px);
+  }
+
+  @include susy-media(desktop) {
+    font-size: 23px;
+    line-height: 1.8;
+
+    &:before {
+      margin-bottom: rem(15px);
+    }
   }
 }
 
@@ -139,7 +150,7 @@ blockquote {
     &:after {
       @extend %icons;
       content: $icon-read-more;
-      margin-left: rem(8px);
+      margin-left: rem(16px);
       color: $link-color;
       transition: all 0.3s ease;
     }
