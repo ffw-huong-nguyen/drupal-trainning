@@ -123,10 +123,6 @@
   @include susy-media(tablet) {
     margin: rem(0 20px);
   }
-
-  @include susy-media(desktop) {
-    margin: 0;
-  }
 }
 
 .slider-quotes__item {
