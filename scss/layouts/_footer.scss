@@ -28,7 +28,7 @@
 
     ul.menu {
       li {
-        margin-bottom: 17px;
+        margin-bottom: rem(17px);
       }
     }
   }
@@ -40,7 +40,7 @@
 
 .footer-column__logo {
   line-height: 0;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .footer-column__social {

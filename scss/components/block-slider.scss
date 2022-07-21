@@ -6,149 +6,182 @@
 @import '../imports/variables';
 @import '../imports/mixins';
 
+
 .slider {
-  background: $white;
-  padding-top: rem(40px);
-
-  @include susy-media(desktop) {
-    padding-top: 0;
-  }
-}
-
-.slider-wrap {
-  @include susy-media(desktop) {
-    display: flex;
-    flex-wrap: wrap;
-
-    .block-slider-quotes {
-      order: 2;
-    }
-  }
-}
-
-.slider-title {
   position: relative;
-  letter-spacing: 1px;
-  padding-bottom: rem(7px);
-  margin-bottom: rem(40px);
+  background: $gray;
+  margin-bottom: rem(94px);
 
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: rem(45px);
-    height: rem(2px);
-    background: $primary-color;
-  }
+  .slider-title {
+    position: relative;
+    letter-spacing: rem(1px);
+    padding-top: rem(40px);
+    padding-bottom: rem(6px);
+    margin-bottom: rem(40px);
 
-  @include susy-media(tablet) {
-    font-size: rem(34px);
-    line-height: 1.4;
-    max-width: 88%;
+    @include susy-media(tablet) {
+      font-size: rem(34px);
+      line-height: 1.35;
+    }
+
+    @include susy-media(desktop) {
+      padding-top: rem(80px);
+      margin-bottom: rem(30px);
+    }
 
     &:after {
-      width: rem(60px);
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: rem(45px);
+      height: rem(2px);
+      background: $primary-color;
+
+      @include susy-media(tablet) {
+        width: rem(73px);
+      }
     }
   }
-}
 
-.block-slider-logos {
-  padding: rem(30px 0 50px);
-
-  @include susy-media(desktop) {
-    width: 60%;
-    padding: rem(80px 0);
-  }
-
+  // Slider Logos
   .slider-logos {
     @include susy-media(desktop) {
-      display: flex;
-      flex-wrap: wrap;
+      width: 54%;
+      margin-bottom: rem(50px);  
+      display: inline-block;
     }
+
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: rem(-45px);
+
+      li {
+        margin: rem(0 1px);
+    
+        button:before {
+          font-size: rem(30px);
+        }
+    
+        &.slick-active button:before {
+          color: $primary-color;
+          font-size: rem(42px);
+        }
+      }
+
+      @include susy-media(desktop) {
+        display: none;
+      }
+    }
+  }
+
+  .slider-logos__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .slider-logos__item {
     width: calc((100% - 20px) / 2);
+    align-items: center;
+    display: flex;
     cursor: pointer;
 
     @include susy-media(tablet) {
-      width: calc((100% - 30px) / 4);
+      width: calc((100% - 10px) / 4);
+      padding: rem(25px 0);
     }
 
     @include susy-media(desktop) {
-      width: calc((100% - 30px) / 3);
-      margin-bottom: rem(30px);
+      width: calc((100% - 20px) / 3) !important;
+    }
+
+    @include susy-media(desktopLarge) {
+      padding: rem(20px 0);
+    }
+
+    img {
+      margin: auto;
+      line-height: 0;
+      padding: rem(30px 20px);
+    }
+
+    &.tab-active,
+    &.slick-current {
+      img {
+        box-shadow: 0 5px 10px 2px $silver;
+        background: $white;
+      }
     }
   }
 
-  .slick-dots {
-    bottom: rem(-35px);
+  // Slider Quotes
+  .slider-quotes {
+    margin-bottom: rem(32px);
 
-    li {
-      margin: rem(0 1px);
-  
-      button:before {
-        font-size: rem(30px);
-      }
-  
-      &.slick-active button:before {
-        color: $primary-color;
-        font-size: rem(42px);
-      }
+    @include susy-media(desktop) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 41.6%;
+      height: 100%;
+      margin-left: auto;
+    }
+
+    @include susy-media(desktopLarge) {
+      width: 42%;
     }
   }
-}
 
-.block-slider-quotes {
-  padding: rem(40px 0);
-  margin-left: -10px;
-  margin-right: -10px;
-
-  @include susy-media(tablet) {
-    margin-left: -20px;
-    margin-right: -20px;
+  .slider-quotes__list {
+    height: 100%;
   }
 
-  @include susy-media(desktop) {
-    width: 40%;
-    margin: auto;
-    padding: rem(100px 0);
+  .slider-quotes__item {
+    padding: rem(40px 40px 43px 10px);
+
+    @include susy-media(tablet) {
+      padding-left: rem(20px);
+    }
+
+    @include susy-media(desktop) {
+      padding: rem(108px 70px 70px 58px);
+    }
+
+    @include susy-media(desktopLarge) {
+      width: 85%;
+      padding-left: rem(80px);
+    }
+
+    @include susy-media(desktopLarge) {
+      width: 86%;
+      padding-top: 150px;
+    }
+
+    @include susy-media(desktopSuperWide) {
+      width: 70%;
+    }
   }
-}
 
-.slider-quotes {
-  margin: rem(0 10px);
+  .slider-quotes__author {
+    color: white;
+    font-size: rem(30px);
+    letter-spacing: rem(1px);
+    margin-bottom: rem(15px);
 
-  @include susy-media(tablet) {
-    margin: rem(0 20px);
+    @include susy-media(desktop) {
+      font-size: rem(37px);
+      font-weight: bold;
+      line-height: 1.25;
+      letter-spacing: 0;
+      margin-bottom: rem(40px);
+    }
   }
-}
 
-.slider-quotes__item {
-  @include susy-media(desktop) {
-    padding: rem(10px 0 80px 70px);
+  .slider-quotes__link {
+    margin-top: rem(25px);
+    font-size: rem(18px);
   }
-
-  @include susy-media(desktopWide) {
-    padding: rem(80px 70px);
-  }
-}
-
-.slider-quotes__author {
-  color: white;
-  font-size: rem(30px);
-  margin-bottom: rem(15px);
-
-  @include susy-media(desktop) {
-    font-size: rem(37px);
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: rem(40px);
-  }
-}
-
-.slider-quotes__link {
-  margin-top: rem(25px);
-  font-size: rem(18px);
 }

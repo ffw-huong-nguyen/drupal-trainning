@@ -66,6 +66,7 @@
   position: relative;
   height: rem(40px);
   width: rem(40px);
+  margin-right: rem(-10px);
   cursor: pointer;
 
   @include susy-media(desktop) {
@@ -76,17 +77,17 @@
     position: absolute;
     top: rem(12px);
     left: 50%;
-    width: rem(20px);
+    width: rem(25px);
     border-bottom: rem(2px) solid #000;
     transform: translateX(-50%);
     transition: transform .3s;
 
     &:nth-child(2) {
-      top: rem(18px);
+      top: rem(20px);
     }
 
     &:nth-child(3) {
-      top: rem(24px);
+      top: rem(28px);
     }
   }
 }

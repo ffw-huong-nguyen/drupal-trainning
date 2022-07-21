@@ -112,21 +112,25 @@ blockquote {
   line-height: 1.7;
   display: block;
 
-  &:before {
-    @extend %icons;
-    content: $icon-quote;
-    color: $secondary-color;
-    display: block;
-    margin-bottom: rem(30px);
+  @include susy-media(tablet)  {
+    font-size: rem(24px);
+    letter-spacing: rem(-0.5px);
+    line-height: 1.5;
   }
 
   @include susy-media(desktop) {
-    font-size: 23px;
-    line-height: 1.8;
+    font-size: rem(23px);
+    letter-spacing: rem(1.5px);
+    line-height: 1.85;
+  }
 
-    &:before {
-      margin-bottom: rem(15px);
-    }
+  &:before {
+    @extend %icons;
+    content: $icon-quote;
+    font-size: rem(18px);
+    color: $secondary-color;
+    margin-bottom: rem(30px);
+    display: block;
   }
 }
 
@@ -150,7 +154,8 @@ blockquote {
     &:after {
       @extend %icons;
       content: $icon-read-more;
-      margin-left: rem(16px);
+      margin-left: rem(20px);
+      font-size: rem(23px);
       color: $link-color;
       transition: all 0.3s ease;
     }

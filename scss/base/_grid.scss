@@ -9,15 +9,15 @@
     @include container($susy-desktop);
   }
 
-  @include susy-media(desktopWide) {
+  @include susy-media(desktopLarge) {
     @include container($susy-desktop-wide);
   }
 }
 
-.container.container--large {
+.container--large {
   @include susy-media(desktopToSuperWide) {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: rem(30px);
+    margin-right: rem(30px);
     max-width: inherit;
   }
 
