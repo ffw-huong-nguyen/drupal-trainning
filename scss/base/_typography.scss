@@ -142,6 +142,10 @@ blockquote {
   display: inline-block;
   cursor: pointer;
 
+  &--text {
+    color: $text-color;
+  }
+
   &:active,
   &:hover {
     color: $link-color-hover;
@@ -168,10 +172,6 @@ blockquote {
     }
   }
 
-  &--text {
-    color: $text-color;
-  }
-
   &--white {
     color: $white;
 
@@ -192,6 +192,12 @@ blockquote {
 
 a {
   @extend %link;
+}
+
+.link-wrap {
+  a {
+    @extend %link--text;
+  }
 }
 
 %list,

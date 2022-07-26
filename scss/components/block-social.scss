@@ -1,0 +1,27 @@
+
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/mixins';
+
+.block-social {
+  text-align: center;
+  line-height: 0;
+  margin-bottom: rem(35px);
+
+  @include susy-media(desktop) {
+    text-align: left;
+  }
+
+  a {
+    font-size: rem(20px);
+    margin-right: rem(35px);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

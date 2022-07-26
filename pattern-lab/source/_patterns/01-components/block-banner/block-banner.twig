@@ -1,59 +1,27 @@
 <div class="banner">
   <div class="banner-bg">
-    <picture>
-      <source media="(min-width: 1920px)" srcset="https://via.placeholder.com/1920x725.png">
-      <source media="(min-width: 1440px)" srcset="https://via.placeholder.com/1800x920.png">
-      <source media="(min-width: 1024px)" srcset="https://via.placeholder.com/1400x1150.png">
-      <source media="(min-width: 768px)" srcset="https://via.placeholder.com/1000x1500.png">
-      <img src="https://via.placeholder.com/400x1200.png">
-    </picture>
+    {{ blockBanner.bgrImage }}
   </div>
   <div class="banner-content">
     <div class="container">
       <div class="banner-content__wrap">
         <div class="banner-content__left">
-          <h1 class="banner-content__title">A New Approach to Enterprise Data Delivery & Access</h1>
+          <h1 class="banner-content__title">
+            {{ blockBanner.title }}
+          </h1>
           <div class="banner-content__description">
-            <p>Personalized, secure, production-quality data that you can bookmark, version, refresh, restore, branch, and share. Ask us how.</p>
+            {{ blockBanner.description }}
           </div>
           <div class="banner-content__form">
-            <form>
-              <input type="email" placeholder="Email Address" />
-              <button type="submit" class="btn">Speak to a Data Expert</button>
-            </form>
+            {{ blockBanner.formNewsletter }}
           </div>
           <div class="banner-content__links">
-            <span class="prefix">New</span>
-            <a class="link--arrow link--text" href="#">Depart to Heakthcare & insurance</a>
+            <span class="prefix text--uppercase">New</span>
+            {{ blockBanner.link }}
           </div>
         </div>
         <div class="banner-content__slider">
-          <div class="js-banner-slider">
-            <div class="slider-item">
-              <div class="slider-image">
-                <img src="https://picsum.photos/500/500">
-              </div>
-              <div class="slider-image--small">
-                <img src="https://picsum.photos/120/120">
-              </div>
-            </div>
-            <div class="slider-item">
-              <div class="slider-image">
-                <img src="https://picsum.photos/500/500">
-              </div>
-              <div class="slider-image--small">
-                <img src="https://picsum.photos/120/120">
-              </div>
-            </div>
-            <div class="slider-item">
-              <div class="slider-image">
-                <img src="https://picsum.photos/500/500">
-              </div>
-              <div class="slider-image--small">
-                <img src="https://picsum.photos/120/120">
-              </div>
-            </div>
-          </div>
+          {{ blockBanner.sliders }}
         </div>
       </div>
     </div>

@@ -1,0 +1,161 @@
+{
+  "blockBanner": {
+    "bgrImage": {
+      "include()": {
+        "pattern": "base-picture",
+        "with": {
+          "picture": {
+            "srcDesktopSuperWide": "https://via.placeholder.com/1920x725.png",
+            "srcDesktopWide": "https://via.placeholder.com/1800x920.png",
+            "srcDesktop": "https://via.placeholder.com/1920x1150.png",
+            "srcTablet": "https://via.placeholder.com/1000x1500.png",
+            "src": "https://via.placeholder.com/400x1200.png",
+            "alt": "background-image"
+          }
+        },
+        "only": true
+      }
+    },
+    "title": "A New Approach to Enterprise Data Delivery & Access",
+    "description": "<p>Personalized, secure, production-quality data that you can bookmark, version, refresh, restore, branch, and share. Ask us how.</p>",
+    "formNewsletter": "<form><input type='email' placeholder='Email Address'><button type='submit' class='btn'>Speak to a Data Expert</button></form>",
+    "link": {
+      "include()": {
+        "pattern": "base-link",
+        "with": {
+          "link": {
+            "target": "",
+            "class": "link--arrow link--text",
+            "href": "#",
+            "text": "Depart to Heakthcare & insurance"
+          }
+        },
+        "only": true
+      }
+    },
+    "sliders": {
+      "include()": {
+        "pattern": "components-block-banner-sliders",
+        "with": {
+          "items": [
+            {
+              "include()": {
+                "pattern": "components-block-banner-slider",
+                "with": {
+                  "sliderItem": {
+                    "bigImage": {
+                      "include()": {
+                        "pattern": "base-image",
+                        "with": {
+                          "image": {
+                            "src": "https://picsum.photos/500/500",
+                            "alt": "Image",
+                            "width": "500",
+                            "height": "500"
+                          }
+                        },
+                        "only": true
+                      }
+                    },
+                    "smallImage": {
+                      "include()": {
+                        "pattern": "base-image",
+                        "with": {
+                          "image": {
+                            "src": "https://picsum.photos/120/120",
+                            "alt": "Image",
+                            "width": "120",
+                            "height": "120"
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  }
+                },
+                "only": true
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-banner-slider",
+                "with": {
+                  "sliderItem": {
+                    "bigImage": {
+                      "include()": {
+                        "pattern": "base-image",
+                        "with": {
+                          "image": {
+                            "src": "https://picsum.photos/500/500",
+                            "alt": "Image",
+                            "width": "500",
+                            "height": "500"
+                          }
+                        },
+                        "only": true
+                      }
+                    },
+                    "smallImage": {
+                      "include()": {
+                        "pattern": "base-image",
+                        "with": {
+                          "image": {
+                            "src": "https://picsum.photos/120/120",
+                            "alt": "Image",
+                            "width": "120",
+                            "height": "120"
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  }
+                },
+                "only": true
+              }
+            },
+            {
+              "include()": {
+                "pattern": "components-block-banner-slider",
+                "with": {
+                  "sliderItem": {
+                    "bigImage": {
+                      "include()": {
+                        "pattern": "base-image",
+                        "with": {
+                          "image": {
+                            "src": "https://picsum.photos/500/500",
+                            "alt": "Image",
+                            "width": "500",
+                            "height": "500"
+                          }
+                        },
+                        "only": true
+                      }
+                    },
+                    "smallImage": {
+                      "include()": {
+                        "pattern": "base-image",
+                        "with": {
+                          "image": {
+                            "src": "https://picsum.photos/120/120",
+                            "alt": "Image",
+                            "width": "120",
+                            "height": "120"
+                          }
+                        },
+                        "only": true
+                      }
+                    }
+                  }
+                },
+                "only": true
+              }
+            }
+          ]
+        },
+        "only": true
+      }
+    }
+  }
+}

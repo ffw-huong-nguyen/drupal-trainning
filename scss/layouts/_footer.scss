@@ -1,113 +1,74 @@
 .footer {
-  padding: rem(60px 0);
+  padding: rem(40px 0);
 
-  a {
-    @extend %link--text;
-    font-size: rem(12px);
-
-    @include susy-media(desktop) {
-      font-size: rem(14px);
-    }
+  @include susy-media(desktop) {
+    padding: rem(60px 0);
   }
 }
 
-// footer column
-.footer-column {
+.footer-top {
   @include susy-media(desktop) {
     margin-bottom: rem(40px);
   }
-
-  .block-footer-menu {
-    @include susy-media(desktop) {
-      @include span(2 of $susy-desktop);
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    ul.menu {
-      li {
-        margin-bottom: rem(17px);
-      }
-    }
-  }
 }
 
-.footer-column__title {
-  text-transform: uppercase;
-}
-
-.footer-column__logo {
-  line-height: 0;
-  margin-bottom: rem(30px);
-}
-
-.footer-column__social {
-  @include susy-media(mobiletablet) {
-    text-align: center;
-  }
-
-  a {
-    margin-right: rem(35px);
+.footer-top__col {
+  @include susy-media(desktop) {
+    @include span(2 of $susy-desktop);
 
     &:last-child {
       margin-right: 0;
     }
   }
+
+  ul.menu {
+    li {
+      margin-bottom: rem(17px);
+    }
+  }
 }
 
-// footer bottom
+.footer-top__logo {
+  line-height: 0;
+  margin-bottom: rem(30px);
+}
+
 .footer-bottom {
+  text-align: center;
+
   @include susy-media(desktop) {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
 .footer-bottom__legal {
-  width: 100%;
+  margin-bottom: rem(33px);
 
   @include susy-media(desktop) {
-    @include span(6 of $susy-tablet);
-  }
-
-  @include susy-media(desktop) {
-    @include span(10 of $susy-desktop);
+    width: span(10 of $susy-desktop);
+    text-align: left;
+    margin-bottom: 0;
   }
 
   ul.menu {
-    display: flex;
-    align-items: center;
-
-    @include susy-media(mobiletablet) {
-      justify-content: center;
-    }
-
     li {
-      padding: rem(10px 6px);
-
-      &:first-child {
-        padding-left: 0;
-      }
+      margin-right: rem(15px);
 
       &:last-child {
-        padding-right: 0;
-      }
-        
-      a {
-        font-size: rem(12px);
+        margin-right: 0;
       }
     }
   }
 }
 
 .footer-bottom__copyright {
-  @include susy-media(mobiletablet) {
-    text-align: center;
-  }
+  line-height: 1;
 
-  span {
-    font-size: rem(12px);
+  @include susy-media(desktop) {
+    width: span(2 of $susy-desktop);
+    text-align: right;
   }
 }

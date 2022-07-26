@@ -1,0 +1,12 @@
+.block-social {
+  text-align: center;
+  line-height: 0;
+  margin-bottom: 2.1875rem; }
+  @media (min-width: 64em) {
+    .block-social {
+      text-align: left; } }
+  .block-social a {
+    font-size: 1.25rem;
+    margin-right: 2.1875rem; }
+    .block-social a:last-child {
+      margin-right: 0; }

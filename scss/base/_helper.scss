@@ -16,6 +16,7 @@
   }
 }
 
+%font,
 .font {
   &--bold {
     font-weight: 700;
@@ -27,6 +28,10 @@
 
   &--italic {
     font-style: italic;
+  }
+
+  &--small {
+    font-size: rem(12px);
   }
 }
 
@@ -60,20 +65,25 @@
   @include clearfix;
 }
 
-.hidden-mobile {
-  @include susy-media(mobileOnly) {
-    display: none;
+.hidden {
+  display: none;
+
+  &-mobile {
+    @include susy-media(mobileOnly) {
+      display: none;
+    }
+  }
+  
+  &-tablet {
+    @include susy-media(tabletOnly) {
+      display: none;
+    }
+  }
+  
+  &-desktop {
+    @include susy-media(desktop) {
+      display: none;
+    }
   }
 }
 
-.hidden-tablet {
-  @include susy-media(mobiletablet) {
-    display: none;
-  }
-}
-
-.hidden-desktop {
-  @include susy-media(desktop) {
-    display: none;
-  }
-}
