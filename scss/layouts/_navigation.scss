@@ -1,40 +1,13 @@
 // Navigation.
-ul.menu {
+.main-menu {
   li {
-    a {
-      font-size: rem(14px);
-    }
-  }
-
-  &--horizontal {
-    li {
-      padding: rem(10px 20px);
+    @include susy-media(desktop) {
       display: inline-block;
-
-      a {
-        font-size: rem(12px)
-      }
     }
   }
 
-  &--main {
-    li {
-      padding: rem(20px 15px);
-
-      @include susy-media(desktop) {
-        display: inline-block;
-      }
-
-      a {
-        font-size: rem(20px);
-      }
-    }
-  }
-
-  &--no-padding {
-    li {
-      padding: 0;
-    }
+  a {
+    font-size: rem(20px);
+    padding: rem(20px 15px);
   }
 }
-

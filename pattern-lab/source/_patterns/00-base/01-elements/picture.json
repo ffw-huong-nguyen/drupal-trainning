@@ -1,8 +1,8 @@
 {
   "picture": {
-    "srcDesktop": "https://picsum.photos/1920/610",
-    "srcTablet": "https://picsum.photos/1024/610",
-    "src": "https://picsum.photos/768/430",
+    "srcDesktop": "https://via.placeholder.com/1024x700.png",
+    "srcTablet": "https://via.placeholder.com/768x600.png",
+    "src": "https://via.placeholder.com/400x500.png",
     "alt": "FFW picture"
   }
 }

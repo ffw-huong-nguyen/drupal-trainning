@@ -5,7 +5,7 @@
       "with": {
         "blockMenu": {
           "label": "",
-          "content": "<ul class='menu menu--horizontal'><li class='menu-item'><a href='#'>English</a></li><li class='menu-item'><a href='#'>Contact</a></li><li class='menu-item'><a href='#'>Support</a></li><li class='menu-item'><a href='#'>Login</a></li></ul>"
+          "content": "<ul class='menu'><li class='menu-item'><a href='#'>English</a></li><li class='menu-item'><a href='#'>Contact</a></li><li class='menu-item'><a href='#'>Support</a></li><li class='menu-item'><a href='#'>Login</a></li></ul>"
         }
       },
       "only": true
@@ -30,7 +30,7 @@
         "with": {
           "blockMenu": {
             "label": "",
-            "content": "<ul class='menu menu--main'><li class='menu-item'><a href='#'>Product</a></li><li class='menu-item'><a href='#'>Solution</a></li><li class='menu-item'><a href='#'>Resources</a></li><li class='menu-item'><a href='#'>Company</a></li></ul>"
+            "content": "<ul class='menu main-menu'><li class='menu-item'><a href='#'>Product</a></li><li class='menu-item'><a href='#'>Solution</a></li><li class='menu-item'><a href='#'>Resources</a></li><li class='menu-item'><a href='#'>Company</a></li></ul>"
           }
         },
         "only": true

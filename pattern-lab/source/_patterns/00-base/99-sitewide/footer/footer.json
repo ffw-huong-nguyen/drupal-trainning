@@ -12,7 +12,7 @@
                   "pattern": "base-markup",
                   "with": {
                     "markup": {
-                      "html": "<a href='/' rel='home' class='site-logo hidden-tablet hidden-mobile'><img src='../../../../../../images/demo-logo.png' alt='Home' /></a>"
+                      "html": "<a href='/' rel='home' class='site-logo'><img src='../../../../../../images/demo-logo.png' alt='Home' /></a>"
                     }
                   },
                   "only": true
@@ -104,7 +104,7 @@
         "with": {
           "blockMenu": {
             "label": "",
-            "content": "<ul class='menu menu--horizontal menu--no-padding'><li class='menu-item'><a href='#'>Privacy Policy</a></li><li class='menu-item'><a href='#'>Terms of Use</a></li><li class='menu-item'><a href='#'>Legal</a></li><li class='menu-item'><a href='#'>Sitemap</a></li></ul>"
+            "content": "<ul class='menu'><li class='menu-item'><a href='#'>Privacy Policy</a></li><li class='menu-item'><a href='#'>Terms of Use</a></li><li class='menu-item'><a href='#'>Legal</a></li><li class='menu-item'><a href='#'>Sitemap</a></li></ul>"
           }
         },
         "only": true

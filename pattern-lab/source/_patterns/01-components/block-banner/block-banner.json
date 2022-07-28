@@ -5,11 +5,9 @@
         "pattern": "base-picture",
         "with": {
           "picture": {
-            "srcDesktopSuperWide": "https://via.placeholder.com/1920x725.png",
-            "srcDesktopWide": "https://via.placeholder.com/1800x920.png",
-            "srcDesktop": "https://via.placeholder.com/1920x1150.png",
-            "srcTablet": "https://via.placeholder.com/1000x1500.png",
-            "src": "https://via.placeholder.com/400x1200.png",
+            "srcDesktop": "https://via.placeholder.com/1920x1000.png",
+            "srcTablet": "https://via.placeholder.com/1024x1700.png",
+            "src": "https://via.placeholder.com/768x1200.png",
             "alt": "background-image"
           }
         },
@@ -18,7 +16,7 @@
     },
     "title": "A New Approach to Enterprise Data Delivery & Access",
     "description": "<p>Personalized, secure, production-quality data that you can bookmark, version, refresh, restore, branch, and share. Ask us how.</p>",
-    "formNewsletter": "<form><input type='email' placeholder='Email Address'><button type='submit' class='btn'>Speak to a Data Expert</button></form>",
+    "form": "<form><div class='js-form-item form-item js-form-type-email form-item-email-address js-form-item-email-address'><input data-drupal-selector='edit-email-address' type='email' id='edit-email-address' name='email_address' value='' placeholder='Email Address' size='60' maxlength='254' class='form-email required' required='required' aria-required='true'></div><div data-drupal-selector='edit-actions' class='form-actions js-form-wrapper form-wrapper' id='edit-actions'><input class='btn js-form-submit form-submit' data-drupal-selector='edit-submit' type='submit' id='edit-submit' name='op' value='Speak to a Data Expert'></div></form>",
     "link": {
       "include()": {
         "pattern": "base-link",

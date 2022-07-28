@@ -1,8 +1,12 @@
 .header-top {
+  padding: rem(10px 0);
+
   ul.menu {
     li {
-      &:last-child {
-        padding-right: 0;
+      display: inline-block;
+
+      a {
+        margin-left: rem(40px);
       }
     }
   }
@@ -22,6 +26,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @include susy-media(desktop) {
+    flex-grow: 1;
+  }
+
   a {
     display: block;
     line-height: 0;
@@ -30,11 +38,15 @@
 
 .header-main__menu {
   @include susy-media(desktop) {
-    width: span(8 of $susy-desktop);
+    flex-grow: 8;
   }
 }
 
 .header-main__right {
+  @include susy-media(desktop) {
+    flex-grow: 1;
+  }
+
   form.search-form {
     display: inline;
     cursor: pointer;

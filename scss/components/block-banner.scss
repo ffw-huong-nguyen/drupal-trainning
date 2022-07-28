@@ -6,73 +6,85 @@
 @import '../imports/variables';
 @import '../imports/mixins';
 
-.banner {
+.block-banner {
   position: relative;
+  overflow: hidden;
 }
 
-.banner-bg {
+.block-banner__background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
   line-height: 0;
 
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    max-height: rem(1200px);
-
-    @include susy-media(desktop) {
-      max-height: rem(1150px);
-    }
-
-    @include susy-media(desktopLarge) {
-      max-height: rem(920px);
-    }
-
-    @include susy-media(desktopWide) {
-      max-height: rem(725px);
-    }
   }
 }
 
-.banner-content {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+.block-banner__content {
+  padding: rem(45px 0);
+
+  @include susy-media(tablet) {
+    padding: rem(87px 0);
+  }
+
+  @include susy-media(desktop) {
+    padding: rem(95px 0);
+  }
 }
 
-.banner-content__wrap {
+.block-banner__inner {
   @include susy-media(desktop) {
     display: flex;
     justify-content: space-between;
   }
 }
 
-.banner-content__title {
-  @include susy-media(tablet) {
-    margin-bottom: rem(40px);
-  }
-}
-
-.banner-content__description {
-  @include susy-media(tablet) {
-    margin-bottom: rem(40px);
-  }
-
-  p {
-    font-size: rem(24px);
-    letter-spacing: rem(-0.3px);
-    line-height: 1.5;
-  }
-}
-
-.banner-content__left {
+.block-banner__left {
   @include susy-media(desktop) {
     width: 52%;
   }
 }
 
-.banner-content__form {
+.block-banner__title {
+  @include susy-media(tablet) {
+    margin-bottom: rem(40px);
+  }
+}
+
+.block-banner__description {
   margin-bottom: rem(30px);
+
+  @include susy-media(tablet) {
+    margin-bottom: rem(40px);
+  }
+
+  p {
+    font-size: rem(20px);
+    letter-spacing: rem(-0.3px);
+    line-height: 1.5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include susy-media(tablet) {
+      font-size: rem(24px);
+    }
+  }
+}
+
+.block-banner__form {
+  margin-bottom: rem(35px);
+
+  @include susy-media(desktop) {
+    padding-right: rem(24px);
+  }
 
   form {
     @include susy-media(tablet) {
@@ -80,38 +92,31 @@
       margin-bottom: rem(25px);
     }
 
-    input {
-      height: auto;
-      padding: rem(20px);
-      border: none;
-      margin-right: 0;
+    .form-item-email-address {
+      width: 100%;
       margin-bottom: rem(10px);
 
       @include susy-media(tablet) {
-        width: 44%;
         margin-bottom: 0;
       }
 
-      @include susy-media(desktopLarge) {
-        width: 57%;
+      input {
+        border: none;
+        height: auto;
+        padding: rem(20px);
       }
     }
 
-    button {
-      padding: rem(18px 10px);
-
-      @include susy-media(desktop) {
-        width: 51%;
-      }
-
-      @include susy-media(desktopLarge) {
-        width: 40%;
+    .form-actions {
+      input[type="submit"] {
+        padding-left: rem(22px);
+        padding-right: rem(22px);
       }
     }
   }
 }
 
-.banner-content__links {
+.block-banner__links {
   display: flex;
   margin-bottom: rem(40px);
 
@@ -132,11 +137,15 @@
     border-radius: rem(6px);
     margin-right: rem(10px);
   }
+
+  a {
+    font-size: rem(17px);
+  }
 }
 
-.banner-content__slider {
+.block-banner__slider {
   @include susy-media(desktop) {
-    width: 40%;
+    width: 42%;
   }
 
   @include susy-media(desktopLarge) {
@@ -163,12 +172,12 @@
   }
 }
 
-.banner-content__slider__item {
+.slider-item {
   position: relative;
   padding-bottom: rem(48px);
 }
 
-.banner-content__slider__image {
+.slider-item__image {
   img {
     width: 100%;
     max-width: 100%;
@@ -177,7 +186,7 @@
   }
 }
 
-.banner-content__slider__image--small {
+.slider-item__image--small {
   position: absolute;
   right: rem(93px);
   bottom: 0;

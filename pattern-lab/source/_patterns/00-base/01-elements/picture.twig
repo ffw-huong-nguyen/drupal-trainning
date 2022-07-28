@@ -1,17 +1,11 @@
 <picture>
-  {% if picture.srcDesktopSuperWide %}
-    <source media="{{ desktopSuperWide }}" srcset="{{ picture.srcDesktopSuperWide }}">
-  {% endif %}
-  {% if picture.srcDesktopWide %}
-    <source media="{{ desktopWide }}" srcset="{{ picture.srcDesktopWide }}">
-  {% endif %}
   {% if picture.srcDesktop %}
-    <source media="{{ desktop }}" srcset="{{ picture.srcDesktop }}">
+  <source media="(min-width: 1024px)" srcset="{{ picture.srcDesktop }}">
   {% endif %}
   {% if picture.srcTablet %}
-    <source media="{{ tablet }}" srcset="{{ picture.srcTablet }}">
+  <source media="(min-width: 768px)" srcset="{{ picture.srcTablet }}">
   {% endif %}
   {% if picture.src %}
-    <img src="{{ picture.src }}" alt="{{ picture.alt }}">
+  <img src="{{ picture.src }}" alt="{{ picture.alt }}">
   {% endif %}
 </picture>

@@ -13,11 +13,15 @@
 }
 
 .footer-top__col {
-  @include susy-media(desktop) {
-    @include span(2 of $susy-desktop);
+  &.first {
+    .site-logo {
+      line-height: 0;
+      margin-bottom: rem(30px);
+      display: none;
 
-    &:last-child {
-      margin-right: 0;
+      @include susy-media(desktop) {
+        display: inline-block;
+      }
     }
   }
 
@@ -26,11 +30,14 @@
       margin-bottom: rem(17px);
     }
   }
-}
 
-.footer-top__logo {
-  line-height: 0;
-  margin-bottom: rem(30px);
+  @include susy-media(desktop) {
+    @include span(2 of $susy-desktop);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .footer-bottom {
@@ -55,10 +62,16 @@
 
   ul.menu {
     li {
-      margin-right: rem(15px);
+      display: inline-block;
+
+      a {
+        margin-right: rem(15px);
+      }
 
       &:last-child {
-        margin-right: 0;
+        a {
+          margin-right: 0;
+        }
       }
     }
   }
