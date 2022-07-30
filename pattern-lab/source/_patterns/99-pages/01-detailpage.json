@@ -1,0 +1,99 @@
+{
+	"pageclass" : "",
+  "headerContent": "",
+	"mainRegion": {
+	  "include()": {
+		"pattern": "templates-content-layout",
+		"with": {
+		  "contentLayout": {
+				"items": [
+					{
+						"include()": {
+							"pattern": "components-page-header",
+							"with": {
+								"pageHeader": {
+									"linkBackTo": {
+										"include()": {
+											"pattern": "base-link",
+											"with": {
+												"link": {
+													"target": "",
+													"class": "link--arrow-back font--medium",
+													"href": "#",
+													"text": "Back to all careers"
+												}
+											},
+											"only": true
+										}
+									},
+									"title": "Senior Director of Support Operations",
+									"items": [
+										{
+											"include()": {
+												"pattern": "base-link",
+												"with": {
+													"link": {
+														"target": "",
+														"class": "link link--text",
+														"href": "#",
+														"text": "Customer Support"
+													}
+												},
+												"only": true
+											}
+										},
+										{
+											"include()": {
+												"pattern": "base-link",
+												"with": {
+													"link": {
+														"target": "",
+														"class": "link link--text",
+														"href": "#",
+														"text": "Redwood califorima"
+													}
+												},
+												"only": true
+											}
+										},
+										{
+											"include()": {
+												"pattern": "base-link",
+												"with": {
+													"link": {
+														"target": "",
+														"class": "link link--text",
+														"href": "#",
+														"text": "Full time"
+													}
+												},
+												"only": true
+											}
+										}
+									]
+								}
+							},
+							"only": true
+						}
+					},
+					{
+						"include()": {
+							"pattern": "components-block-content",
+							"with": {
+								"blockContent": "<h3>About Delphix</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p><h3>The team</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p><h3>The role</h3><ul class='list'><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li></ul><p><i>You will receive files and databases, such as Oracle, SQL Server, and SAP HANA.</i></p>"
+							},
+							"only": true
+						}
+					}
+				]
+			}
+		},
+		"only": true
+	  }
+	},
+	"footerContent": {
+	  "include()": {
+		"pattern": "base-footer"
+	  }
+	}
+}

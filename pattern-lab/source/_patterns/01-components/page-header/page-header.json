@@ -1,0 +1,63 @@
+{
+  "pageHeader": {
+    "linkBackTo": {
+      "include()": {
+        "pattern": "base-link",
+        "with": {
+          "link": {
+            "target": "",
+            "class": "link--arrow-back font--medium",
+            "href": "#",
+            "text": "Back to all careers"
+          }
+        },
+        "only": true
+      }
+    },
+    "title": "Senior Director of Support Operations",
+    "items": [
+      {
+        "include()": {
+          "pattern": "base-link",
+          "with": {
+            "link": {
+              "target": "",
+              "class": "link",
+              "href": "#",
+              "text": "Customer Support"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-link",
+          "with": {
+            "link": {
+              "target": "",
+              "class": "link",
+              "href": "#",
+              "text": "Redwood califorima"
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "base-link",
+          "with": {
+            "link": {
+              "target": "",
+              "class": "link",
+              "href": "#",
+              "text": "Full time"
+            }
+          },
+          "only": true
+        }
+      }
+    ]
+  }
+}

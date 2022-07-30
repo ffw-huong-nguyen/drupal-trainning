@@ -1,0 +1,11 @@
+<div class="page-header">
+  <div class="container">
+    {{ pageHeader.linkBackTo }}
+    <h1>{{ pageHeader.title }}</h1>
+    <div class="list-links">
+      {% for item in pageHeader.items %}
+        {{ item }}  {% if not loop.last %} | {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -163,12 +163,20 @@ blockquote {
       color: $link-color;
       transition: all 0.3s ease;
     }
-  
-    &:active,
-    &:hover {
-      &:after {
-        color: $link-color-hover;
-      }
+  }
+
+  &--arrow-back {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      @extend %icons;
+      content: $icon-read-more;
+      margin-right: rem(20px);
+      font-size: rem(23px);
+      color: $link-color;
+      transition: all 0.3s ease;
+      transform: rotate(180deg);
     }
   }
 

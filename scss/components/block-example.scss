@@ -6,3 +6,11 @@
 @import '../imports/variables';
 @import '../imports/mixins';
 @import '../imports/icons-variables';
+
+.block-content {
+  padding: rem(55px 0);
+}
+
+.page-header {
+  padding: rem(65px 0);
+}

@@ -13,10 +13,8 @@
 
 .block-banner__background {
   position: absolute;
-  z-index: -1;
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 100%;
   line-height: 0;
 
   img {
@@ -26,7 +24,9 @@
   }
 }
 
-.block-banner__content {
+.block-banner__wrap {
+  position: relative;
+  z-index: 1;  
   padding: rem(45px 0);
 
   @include susy-media(tablet) {
@@ -58,30 +58,17 @@
 }
 
 .block-banner__description {
+  font-size: rem(20px);
+  letter-spacing: rem(-0.3px);
   margin-bottom: rem(30px);
 
   @include susy-media(tablet) {
+    font-size: rem(24px);
     margin-bottom: rem(40px);
-  }
-
-  p {
-    font-size: rem(20px);
-    letter-spacing: rem(-0.3px);
-    line-height: 1.5;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    @include susy-media(tablet) {
-      font-size: rem(24px);
-    }
   }
 }
 
 .block-banner__form {
-  margin-bottom: rem(35px);
-
   @include susy-media(desktop) {
     padding-right: rem(24px);
   }
@@ -93,7 +80,6 @@
     }
 
     .form-item-email-address {
-      width: 100%;
       margin-bottom: rem(10px);
 
       @include susy-media(tablet) {
@@ -118,17 +104,9 @@
 
 .block-banner__links {
   display: flex;
-  margin-bottom: rem(40px);
+  margin-top: rem(35px);
 
-  @include susy-media(tablet) {
-    margin-bottom: rem(80px);
-  }
-
-  @include susy-media(desktop) {
-    margin-bottom: 0;
-  }
-
-  .prefix {
+  .tag {
     color: $primary-color;
     font-size: rem(12px);
     line-height: 1;
@@ -144,8 +122,15 @@
 }
 
 .block-banner__slider {
+  margin-top: rem(40px);
+
+  @include susy-media(tablet) {
+    margin-top: rem(80px);
+  }
+
   @include susy-media(desktop) {
     width: 42%;
+    margin-top: 0;
   }
 
   @include susy-media(desktopLarge) {
@@ -159,25 +144,23 @@
   .slick-arrow {
     position: absolute;
     background: white;
-    padding: rem(15px);
     z-index: 2;
-    right: 0;
     bottom: 0;
     line-height: 1;
     cursor: pointer;
 
-    &.left {
-      right: rem(47px);
+    &:before {
+      color: $black;
     }
   }
 }
 
-.slider-item {
+.banner-slider__item {
   position: relative;
   padding-bottom: rem(48px);
 }
 
-.slider-item__image {
+.banner-slider__image {
   img {
     width: 100%;
     max-width: 100%;
@@ -186,7 +169,7 @@
   }
 }
 
-.slider-item__image--small {
+.banner-slider__image--small {
   position: absolute;
   right: rem(93px);
   bottom: 0;

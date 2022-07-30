@@ -2,27 +2,25 @@
   <div class="block-banner__background">
     {{ blockBanner.bgrImage }}
   </div>
-  <div class="block-banner__content">
-    <div class="container">
-      <div class="block-banner__inner">
-        <div class="block-banner__left">
-          <h1 class="block-banner__title">
-            {{ blockBanner.title }}
-          </h1>
-          <div class="block-banner__description">
-            {{ blockBanner.description }}
-          </div>
-          <div class="block-banner__form">
-            {{ blockBanner.form }}
-          </div>
-          <div class="block-banner__links">
-            <span class="prefix text--uppercase">New</span>
-            {{ blockBanner.link }}
-          </div>
+  <div class="block-banner__wrap container">
+    <div class="block-banner__inner">
+      <div class="block-banner__left">
+        <h1 class="block-banner__title">
+          {{ blockBanner.title }}
+        </h1>
+        <div class="block-banner__description">
+          {{ blockBanner.description }}
         </div>
-        <div class="block-banner__slider">
-          {{ blockBanner.sliders }}
+        <div class="block-banner__form">
+          {{ blockBanner.form }}
         </div>
+        <div class="block-banner__links">
+          <span class="tag text--uppercase">New</span>
+          {{ blockBanner.link }}
+        </div>
+      </div>
+      <div class="block-banner__slider">
+        {{ blockBanner.sliders }}
       </div>
     </div>
   </div>
