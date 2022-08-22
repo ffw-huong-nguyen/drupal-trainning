@@ -1,24 +1,24 @@
 (function ($) {
-  $(document).ready(function ($) {
+  jQuery(document).ready(function ($) {
     var $window = $(window);
 
     function multiSlider() {
       var windowsize = $window.width();
       // slider on mobile
       if (windowsize < 1024) {
-        $('.slider-quotes .js-slider').slick({
-          infinite: true,
+        $('.js-slider-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
           adaptiveHeight: true,
           speed: 800,
           autoplay: false,
           arrows: false,
           swipe: false,
           fade: true,
-          asNavFor: '.slider-logos .js-slider'
+          asNavFor: '.js-slider-nav'
         });
 
-        $('.slider-logos .js-slider').slick({
-          infinite: true,
+        $('.js-slider-nav').slick({
           slidesToShow: 9,
           slidesToScroll: 1,
           centerMode: true,
@@ -27,7 +27,7 @@
           autoplay: false,
           arrows: false,
           dots: true,
-          asNavFor: '.slider-quotes .js-slider',
+          asNavFor: '.js-slider-for',
           responsive: [
             {
               breakpoint: 1024,
@@ -53,7 +53,7 @@
 
       // tab on desktop
       if (windowsize >= 1024) {
-        $('.slider-quotes__list').removeClass('js-slider');
+        $('.slider-quotes__list').removeClass('js-slider-for');
       }
 
       // Show the first tab by default

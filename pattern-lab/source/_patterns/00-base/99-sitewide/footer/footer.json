@@ -12,7 +12,7 @@
                   "pattern": "base-markup",
                   "with": {
                     "markup": {
-                      "html": "<a href='/' rel='home' class='site-logo'><img src='../../../../../../images/demo-logo.png' alt='Home' /></a>"
+                      "html": "<a href='/' rel='home' class='site-logo'><img src='../../../../../../../logo.svg' alt='Home' /></a>"
                     }
                   },
                   "only": true
@@ -24,7 +24,7 @@
                   "with": {
                     "blockSocial": {
                       "label": "",
-                      "content": "<a href='#' class='icon-facebook'></a><a href='#' class='icon-linkedin'></a><a href='#' class='icon-twitter'></a>"
+                      "content": "<a href='#' class='icon-facebook'>FB</a><a href='#' class='icon-linkedin'>LKI</a><a href='#' class='icon-twitter'>TW</a>"
                     }
                   },
                   "only": true

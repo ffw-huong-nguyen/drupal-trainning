@@ -7,6 +7,11 @@
       text-align: left; } }
   .block-social a {
     font-size: 1.25rem;
-    margin-right: 2.1875rem; }
+    margin-right: 2.1875rem;
+    display: inline-block;
+    text-indent: -999em; }
     .block-social a:last-child {
       margin-right: 0; }
+    .block-social a:before {
+      text-indent: 0;
+      float: left; }

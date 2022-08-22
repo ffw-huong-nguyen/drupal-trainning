@@ -19,9 +19,16 @@
   a {
     font-size: rem(20px);
     margin-right: rem(35px);
+    display: inline-block;
+    text-indent: -999em;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:before {
+      text-indent: 0;
+      float: left;
     }
   }
 }

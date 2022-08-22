@@ -1,10 +1,14 @@
 .header-top {
   padding: rem(10px 0);
 
-  ul.menu {
+  ul {
     li {
       display: inline-block;
       margin-left: rem(40px);
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -52,6 +56,10 @@
       font-size: rem(11px);
       margin-left: rem(13px);
     }
+  }
+
+  p {
+    margin-bottom: 0;
   }
 }
 

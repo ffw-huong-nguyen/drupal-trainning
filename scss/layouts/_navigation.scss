@@ -1,5 +1,5 @@
 // Navigation.
-.main-menu {
+.menu--main {
   li {
     @include susy-media(desktop) {
       display: inline-block;

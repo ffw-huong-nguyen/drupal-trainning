@@ -20,7 +20,7 @@
       display: none;
 
       @include susy-media(desktop) {
-        display: inline-block;
+        display: block;
       }
     }
   }

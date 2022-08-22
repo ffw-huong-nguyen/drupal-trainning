@@ -63,12 +63,14 @@
       margin: rem(0 1px);
   
       button:before {
-        font-size: rem(30px);
+        font-size: rem(10px);
       }
   
-      &.slick-active button:before {
-        color: $primary-color;
-        font-size: rem(42px);
+      &.slick-active {
+        button:before {
+          color: $primary-color;
+          font-size: rem(13px);
+        }
       }
     }
 
@@ -158,7 +160,7 @@
 
   @include susy-media(desktopLarge) {
     width: 86%;
-    padding-top: 150px;
+    padding-top: rem(150px);
   }
 
   @include susy-media(desktopSuperWide) {

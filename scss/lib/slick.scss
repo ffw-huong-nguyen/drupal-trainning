@@ -1,0 +1,30 @@
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/mixins';
+
+.slick-arrow {
+  position: absolute;
+  background: $white;
+  z-index: 2;
+  top: auto;
+  width: auto;
+  height: auto;
+  padding: rem(18px 17px);
+  line-height: 1;
+  cursor: pointer;
+
+  &:before {
+    color: $black;
+    font-size: rem(12px);
+    font-weight: 700;
+  }
+
+  &:hover,
+  &:focus {
+    background: white;
+  }
+}

@@ -1,0 +1,16 @@
+.slick-arrow {
+  position: absolute;
+  background: #fff;
+  z-index: 2;
+  top: auto;
+  width: auto;
+  height: auto;
+  padding: 1.125rem 1.0625rem;
+  line-height: 1;
+  cursor: pointer; }
+  .slick-arrow:before {
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 700; }
+  .slick-arrow:hover, .slick-arrow:focus {
+    background: white; }

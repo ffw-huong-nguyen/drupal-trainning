@@ -1,0 +1,92 @@
+<div>
+  <form>
+    <div class="form-item">
+      <label for="username" class="form-required">Username</label>
+      <input type="text" id="username" name="name" value="" class="form-text required" placeholder="Username">
+    </div>
+    <div class="form-item">
+      <label for="email" class="form-required">Email Address</label>
+      <input type="text" id="email" name="name" value="" class="form-text required" placeholder="Email Address">
+    </div>
+    <div class="form-item">
+      <label for="phone" class="form-required">Phone Number</label>
+      <input type="tel" id="phone" name="phone" class="form-text required" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </div>
+    <div class="form-item">
+      <label for="edit-select">Select</label>
+      <select id="edit-select" name="select" class="form-select">
+        <option value="" selected="selected">- Select -</option>
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+      </select>
+    </div>
+    <div class="form-item">
+      <label for="message" class="form-required">Message</label>
+      <textarea id="message" name="message" rows="5" cols="60" class="form-textarea required resize-vertical"></textarea>
+    </div>
+    <div class="form-item form-item--error">
+      <label for="edit-email" class="form-required">Text Input Error</label>
+      <input type="email" id="edit-email" name="email" value="" size="60" maxlength="254" class="form-email required error" placeholder="Input text">
+    </div>
+    <div class="form-item">
+      <label for="edit-subject" class="form-required">Text Input Disabled</label>
+      <input type="text" id="edit-subject" name="subject" value="" size="60" maxlength="255" class="form-text required" disabled placeholder="Input text">
+    </div>
+
+    <fieldset class="fieldgroup form-item">
+      <legend>Checkbox</legend>
+      <div class="fieldgroup--wrapper">
+        <div class="form-checkboxes">
+          <div class="form-item">
+            <input type="checkbox" id="edit-months-january" name="months[January]" value="January" class="form-checkbox">
+            <label for="edit-months-january" class="option">January</label>
+          </div>
+          <div class="form-item">
+            <input data-drupal-selector="edit-months-february" type="checkbox" id="edit-months-february" name="months[February]" value="February" class="form-checkbox">
+            <label for="edit-months-february" class="option">February</label>
+          </div>
+          <div class="form-item">
+            <input type="checkbox" id="edit-months-march" name="months[March]" value="March" class="form-checkbox">
+            <label for="edit-months-march" class="option">March</label>
+          </div>
+          <div class="form-item">
+            <input type="checkbox" id="edit-months-april" name="months[April]" value="April" class="form-checkbox">
+            <label for="edit-months-april" class="option">April</label>
+          </div>
+          <div class="form-item">
+            <input type="checkbox" id="edit-months-may" name="months[May]" value="May" class="form-checkbox">
+            <label for="edit-months-may" class="option">May</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="fieldgroup form-item">
+      <legend>Radio</legend>
+      <div class="fieldgroup-wrapper">
+        <div class="form-radios">
+          <div class="form-item">
+            <input type="radio" id="janpanese" name="radios" value="Focused" class="form-radio focused">
+            <label for="janpanese" class="option">Janpanese</label>
+          </div>
+          <div class="form-item">
+            <input type="radio" id="english" name="radios" value="English" class="form-radio">
+            <label for="english" class="option">English</label>
+          </div>
+          <div class="form-items">
+            <input type="radio" id="vietnamese" name="radios" value="vietnamese" class="form-radio">
+            <label for="vietnamese" class="option">Vietnamese</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-actions webform-actions form-wrapper" id="edit-actions">
+      <input class="webform-button--submit button button--primary form-submit" type="submit" id="edit-actions-submit" name="op" value="Submit">
+    </div>
+  </form>
+</div>

@@ -121,7 +121,8 @@
   }
 }
 
-.block-banner__slider {
+.block-banner__right {
+  position: relative;
   margin-top: rem(40px);
 
   @include susy-media(tablet) {
@@ -137,30 +138,26 @@
     width: 32%;
   }
 
-  .js-banner-slider {
-    position: relative;
+  .slick-arrow {
+    bottom: rem(-24px);
   }
 
-  .slick-arrow {
-    position: absolute;
-    background: white;
-    z-index: 2;
-    bottom: 0;
-    line-height: 1;
-    cursor: pointer;
+  .slick-prev {
+    left: auto;
+    right: 47px;
+  }
 
-    &:before {
-      color: $black;
-    }
+  .slick-next {
+    right: 0;
   }
 }
 
-.banner-slider__item {
+.block-banner-slider {
   position: relative;
   padding-bottom: rem(48px);
 }
 
-.banner-slider__image {
+.block-banner-slider__image {
   img {
     width: 100%;
     max-width: 100%;
@@ -169,7 +166,7 @@
   }
 }
 
-.banner-slider__image--small {
+.block-banner-slider__image-small {
   position: absolute;
   right: rem(93px);
   bottom: 0;

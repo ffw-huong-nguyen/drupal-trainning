@@ -785,18 +785,20 @@ body.show-menu {
   overflow: hidden; }
 
 @media (min-width: 64em) {
-  .main-menu li {
+  .menu--main li {
     display: inline-block; } }
 
-.main-menu a {
+.menu--main a {
   font-size: 1.25rem;
   padding: 1.25rem 0.9375rem; }
 
 .header-top {
   padding: 0.625rem 0rem; }
-  .header-top ul.menu li {
+  .header-top ul li {
     display: inline-block;
     margin-left: 2.5rem; }
+    .header-top ul li:first-child {
+      margin-left: 0; }
 
 @media (min-width: 64em) {
   .header-main__wrap {
@@ -851,6 +853,9 @@ body.show-menu {
     font-size: 0.6875rem;
     margin-left: 0.8125rem; }
 
+.header-main__right p {
+  margin-bottom: 0; }
+
 .header-main__hamburger {
   position: relative;
   height: 2.5rem;
@@ -890,7 +895,7 @@ body.show-menu {
   display: none; }
   @media (min-width: 64em) {
     .footer-top__col.first .site-logo {
-      display: inline-block; } }
+      display: block; } }
 
 .footer-top__col ul.menu li {
   margin-bottom: 1.0625rem; }

@@ -90,41 +90,38 @@
   .block-banner__links a {
     font-size: 1.0625rem; }
 
-.block-banner__slider {
+.block-banner__right {
+  position: relative;
   margin-top: 2.5rem; }
   @media (min-width: 48em) {
-    .block-banner__slider {
+    .block-banner__right {
       margin-top: 5rem; } }
   @media (min-width: 64em) {
-    .block-banner__slider {
+    .block-banner__right {
       width: 42%;
       margin-top: 0; } }
   @media (min-width: 80em) {
-    .block-banner__slider {
+    .block-banner__right {
       width: 32%; } }
-  .block-banner__slider .js-banner-slider {
-    position: relative; }
-  .block-banner__slider .slick-arrow {
-    position: absolute;
-    background: white;
-    z-index: 2;
-    bottom: 0;
-    line-height: 1;
-    cursor: pointer; }
-    .block-banner__slider .slick-arrow:before {
-      color: #000; }
+  .block-banner__right .slick-arrow {
+    bottom: -1.5rem; }
+  .block-banner__right .slick-prev {
+    left: auto;
+    right: 47px; }
+  .block-banner__right .slick-next {
+    right: 0; }
 
-.banner-slider__item {
+.block-banner-slider {
   position: relative;
   padding-bottom: 3rem; }
 
-.banner-slider__image img {
+.block-banner-slider__image img {
   width: 100%;
   max-width: 100%;
   object-fit: cover;
   max-height: 25rem; }
 
-.banner-slider__image--small {
+.block-banner-slider__image-small {
   position: absolute;
   right: 5.8125rem;
   bottom: 0; }

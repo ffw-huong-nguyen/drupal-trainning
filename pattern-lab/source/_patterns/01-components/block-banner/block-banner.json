@@ -9,9 +9,9 @@
             "srcTablet": "https://via.placeholder.com/1024x1700.png",
             "src": "https://via.placeholder.com/768x1200.png",
             "alt": "background-image"
-          }
-        },
-        "only": true
+          },
+          "only": true
+        }
       }
     },
     "title": "A New Approach to Enterprise Data Delivery & Access",
@@ -33,121 +33,127 @@
     },
     "sliders": {
       "include()": {
-        "pattern": "components-banner-sliders",
+        "pattern": "components-block-banner-sliders",
         "with": {
           "items": [
             {
-              "include()": {
-                "pattern": "components-banner-slider",
-                "with": {
-                  "sliderItem": {
-                    "bigImage": {
-                      "include()": {
-                        "pattern": "base-image",
-                        "with": {
-                          "image": {
-                            "src": "https://picsum.photos/500/500",
-                            "alt": "Image",
-                            "width": "500",
-                            "height": "500"
-                          }
-                        },
-                        "only": true
-                      }
-                    },
-                    "smallImage": {
-                      "include()": {
-                        "pattern": "base-image",
-                        "with": {
-                          "image": {
-                            "src": "https://picsum.photos/120/120",
-                            "alt": "Image",
-                            "width": "120",
-                            "height": "120"
-                          }
-                        },
-                        "only": true
+              "content": {
+                "include()": {
+                  "pattern": "components-block-banner-slider",
+                  "with": {
+                    "sliderItem": {
+                      "bigImage": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://picsum.photos/500/500",
+                              "alt": "Image",
+                              "width": "500",
+                              "height": "500"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "smallImage": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://picsum.photos/120/120",
+                              "alt": "Image",
+                              "width": "120",
+                              "height": "120"
+                            }
+                          },
+                          "only": true
+                        }
                       }
                     }
-                  }
-                },
-                "only": true
+                  },
+                  "only": true
+                }
               }
             },
             {
-              "include()": {
-                "pattern": "components-banner-slider",
-                "with": {
-                  "sliderItem": {
-                    "bigImage": {
-                      "include()": {
-                        "pattern": "base-image",
-                        "with": {
-                          "image": {
-                            "src": "https://picsum.photos/500/500",
-                            "alt": "Image",
-                            "width": "500",
-                            "height": "500"
-                          }
-                        },
-                        "only": true
-                      }
-                    },
-                    "smallImage": {
-                      "include()": {
-                        "pattern": "base-image",
-                        "with": {
-                          "image": {
-                            "src": "https://picsum.photos/120/120",
-                            "alt": "Image",
-                            "width": "120",
-                            "height": "120"
-                          }
-                        },
-                        "only": true
+              "content": {
+                "include()": {
+                  "pattern": "components-block-banner-slider",
+                  "with": {
+                    "sliderItem": {
+                      "bigImage": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://picsum.photos/500/500",
+                              "alt": "Image",
+                              "width": "500",
+                              "height": "500"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "smallImage": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://picsum.photos/120/120",
+                              "alt": "Image",
+                              "width": "120",
+                              "height": "120"
+                            }
+                          },
+                          "only": true
+                        }
                       }
                     }
-                  }
-                },
-                "only": true
+                  },
+                  "only": true
+                }
               }
             },
             {
-              "include()": {
-                "pattern": "components-banner-slider",
-                "with": {
-                  "sliderItem": {
-                    "bigImage": {
-                      "include()": {
-                        "pattern": "base-image",
-                        "with": {
-                          "image": {
-                            "src": "https://picsum.photos/500/500",
-                            "alt": "Image",
-                            "width": "500",
-                            "height": "500"
-                          }
-                        },
-                        "only": true
-                      }
-                    },
-                    "smallImage": {
-                      "include()": {
-                        "pattern": "base-image",
-                        "with": {
-                          "image": {
-                            "src": "https://picsum.photos/120/120",
-                            "alt": "Image",
-                            "width": "120",
-                            "height": "120"
-                          }
-                        },
-                        "only": true
+              "content": {
+                "include()": {
+                  "pattern": "components-block-banner-slider",
+                  "with": {
+                    "sliderItem": {
+                      "bigImage": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://picsum.photos/500/500",
+                              "alt": "Image",
+                              "width": "500",
+                              "height": "500"
+                            }
+                          },
+                          "only": true
+                        }
+                      },
+                      "smallImage": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://picsum.photos/120/120",
+                              "alt": "Image",
+                              "width": "120",
+                              "height": "120"
+                            }
+                          },
+                          "only": true
+                        }
                       }
                     }
-                  }
-                },
-                "only": true
+                  },
+                  "only": true
+                }
               }
             }
           ]

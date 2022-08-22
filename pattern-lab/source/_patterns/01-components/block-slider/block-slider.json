@@ -1,0 +1,529 @@
+{
+  "blockSliders": {
+    "title": "Our customers benefit from having the right data at the right time",
+    "sliderLogos": {
+      "include()": {
+        "pattern": "base-loop",
+        "with": {
+          "items": [
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-logo",
+                  "with": {
+                    "sliderLogo": {
+                      "tabID": "#tab-1",
+                      "logo": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://via.placeholder.com/150x50.png",
+                              "alt": "Image",
+                              "width": "150",
+                              "height": "50"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-logo",
+                  "with": {
+                    "sliderLogo": {
+                      "tabID": "#tab-2",
+                      "logo": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://via.placeholder.com/150x50.png",
+                              "alt": "Image",
+                              "width": "150",
+                              "height": "50"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-logo",
+                  "with": {
+                    "sliderLogo": {
+                      "tabID": "#tab-3",
+                      "logo": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://via.placeholder.com/150x50.png",
+                              "alt": "Image",
+                              "width": "150",
+                              "height": "50"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-logo",
+                  "with": {
+                    "sliderLogo": {
+                      "tabID": "#tab-4",
+                      "logo": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://via.placeholder.com/150x50.png",
+                              "alt": "Image",
+                              "width": "150",
+                              "height": "50"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-logo",
+                  "with": {
+                    "sliderLogo": {
+                      "tabID": "#tab-5",
+                      "logo": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://via.placeholder.com/150x50.png",
+                              "alt": "Image",
+                              "width": "150",
+                              "height": "50"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-logo",
+                  "with": {
+                    "sliderLogo": {
+                      "tabID": "#tab-6",
+                      "logo": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://via.placeholder.com/150x50.png",
+                              "alt": "Image",
+                              "width": "150",
+                              "height": "50"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-logo",
+                  "with": {
+                    "sliderLogo": {
+                      "tabID": "#tab-7",
+                      "logo": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://via.placeholder.com/150x50.png",
+                              "alt": "Image",
+                              "width": "150",
+                              "height": "50"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-logo",
+                  "with": {
+                    "sliderLogo": {
+                      "tabID": "#tab-8",
+                      "logo": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://via.placeholder.com/150x50.png",
+                              "alt": "Image",
+                              "width": "150",
+                              "height": "50"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-logo",
+                  "with": {
+                    "sliderLogo": {
+                      "tabID": "#tab-9",
+                      "logo": {
+                        "include()": {
+                          "pattern": "base-image",
+                          "with": {
+                            "image": {
+                              "src": "https://via.placeholder.com/150x50.png",
+                              "alt": "Image",
+                              "width": "150",
+                              "height": "50"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          ]
+        },
+        "only": true
+      }
+    },
+    "sliderQuotes": {
+      "include()": {
+        "pattern": "base-loop",
+        "with": {
+          "items": [
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-quote",
+                  "with": {
+                    "sliderQuote": {
+                      "tabID": "tab-1",
+                      "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 111",
+                      "quote": "We reduced data risk and provided production-like data environments for developers",
+                      "link": {
+                        "include()": {
+                          "pattern": "base-link",
+                          "with": {
+                            "link": {
+                              "target": "",
+                              "class": "link--arrow link--white font--medium",
+                              "href": "#",
+                              "text": "Learn more"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-quote",
+                  "with": {
+                    "sliderQuote": {
+                      "tabID": "tab-2",
+                      "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 222",
+                      "quote": "We reduced data risk and provided production-like data environments for developers",
+                      "link": {
+                        "include()": {
+                          "pattern": "base-link",
+                          "with": {
+                            "link": {
+                              "target": "",
+                              "class": "link--arrow link--white font--medium",
+                              "href": "#",
+                              "text": "Learn more"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-quote",
+                  "with": {
+                    "sliderQuote": {
+                      "tabID": "tab-3",
+                      "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 333",
+                      "quote": "We reduced data risk and provided production-like data environments for developers",
+                      "link": {
+                        "include()": {
+                          "pattern": "base-link",
+                          "with": {
+                            "link": {
+                              "target": "",
+                              "class": "link--arrow link--white font--medium",
+                              "href": "#",
+                              "text": "Learn more"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-quote",
+                  "with": {
+                    "sliderQuote": {
+                      "tabID": "tab-4",
+                      "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 444",
+                      "quote": "We reduced data risk and provided production-like data environments for developers",
+                      "link": {
+                        "include()": {
+                          "pattern": "base-link",
+                          "with": {
+                            "link": {
+                              "target": "",
+                              "class": "link--arrow link--white font--medium",
+                              "href": "#",
+                              "text": "Learn more"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-quote",
+                  "with": {
+                    "sliderQuote": {
+                      "tabID": "tab-5",
+                      "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 555",
+                      "quote": "We reduced data risk and provided production-like data environments for developers",
+                      "link": {
+                        "include()": {
+                          "pattern": "base-link",
+                          "with": {
+                            "link": {
+                              "target": "",
+                              "class": "link--arrow link--white font--medium",
+                              "href": "#",
+                              "text": "Learn more"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-quote",
+                  "with": {
+                    "sliderQuote": {
+                      "tabID": "tab-6",
+                      "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 666",
+                      "quote": "We reduced data risk and provided production-like data environments for developers",
+                      "link": {
+                        "include()": {
+                          "pattern": "base-link",
+                          "with": {
+                            "link": {
+                              "target": "",
+                              "class": "link--arrow link--white font--medium",
+                              "href": "#",
+                              "text": "Learn more"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-quote",
+                  "with": {
+                    "sliderQuote": {
+                      "tabID": "tab-7",
+                      "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 777",
+                      "quote": "We reduced data risk and provided production-like data environments for developers",
+                      "link": {
+                        "include()": {
+                          "pattern": "base-link",
+                          "with": {
+                            "link": {
+                              "target": "",
+                              "class": "link--arrow link--white font--medium",
+                              "href": "#",
+                              "text": "Learn more"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-quote",
+                  "with": {
+                    "sliderQuote": {
+                      "tabID": "tab-8",
+                      "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 888",
+                      "quote": "We reduced data risk and provided production-like data environments for developers",
+                      "link": {
+                        "include()": {
+                          "pattern": "base-link",
+                          "with": {
+                            "link": {
+                              "target": "",
+                              "class": "link--arrow link--white font--medium",
+                              "href": "#",
+                              "text": "Learn more"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            },
+            {
+              "content": {
+                "include()": {
+                  "pattern": "components-block-slider-quote",
+                  "with": {
+                    "sliderQuote": {
+                      "tabID": "tab-9",
+                      "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 999",
+                      "quote": "We reduced data risk and provided production-like data environments for developers",
+                      "link": {
+                        "include()": {
+                          "pattern": "base-link",
+                          "with": {
+                            "link": {
+                              "target": "",
+                              "class": "link--arrow link--white font--medium",
+                              "href": "#",
+                              "text": "Learn more"
+                            }
+                          },
+                          "only": true
+                        }
+                      }
+                    }
+                  },
+                  "only": true
+                }
+              }
+            }
+          ]
+        },
+        "only": true
+      }
+    }
+  }
+}

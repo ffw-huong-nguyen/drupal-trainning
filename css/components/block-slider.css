@@ -49,10 +49,10 @@
   .slider-logos .slick-dots li {
     margin: 0rem 0.0625rem; }
     .slider-logos .slick-dots li button:before {
-      font-size: 1.875rem; }
+      font-size: 0.625rem; }
     .slider-logos .slick-dots li.slick-active button:before {
       color: #1481d7;
-      font-size: 2.625rem; }
+      font-size: 0.8125rem; }
   @media (min-width: 64em) {
     .slider-logos .slick-dots {
       display: none; } }
@@ -127,7 +127,7 @@
   @media (min-width: 80em) {
     .slider-quotes__item {
       width: 86%;
-      padding-top: 150px; } }
+      padding-top: 9.375rem; } }
   @media (min-width: 105em) {
     .slider-quotes__item {
       width: 70%; } }
