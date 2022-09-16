@@ -7,10 +7,37 @@
 @import '../imports/mixins';
 @import '../imports/icons-variables';
 
-.block-content {
-  padding: rem(55px 0);
+.block-example {
+  background: $gray;
 }
 
-.page-header {
-  padding: rem(65px 0);
-}
+// .block-example__item {
+//   @include span(4 of $susy-desktop);
+//   background-color: red;
+//   margin-top: 20px;
+
+//   &:nth-child(3n+3) {
+//     margin-right: 0;
+//   }
+
+//   &:nth-child(1),
+//   &:nth-child(2),
+//   &:nth-child(3) {
+//     margin-top: 0;
+//   }
+// }
+
+// -------------------------
+
+// .block-example__items {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   align-items: flex-start;
+// }
+
+// .block-example__item {
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }

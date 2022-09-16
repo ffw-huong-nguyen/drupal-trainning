@@ -1,20 +1,20 @@
-<div class="block-slider">
-  <div class="slider-quotes">
-    <div class="block-slider__title h2 container hidden-desktop">
-      {{ blockSliders.title }}
-    </div>
-    <div class="slider-quotes__list js-slider-for bg--black text--white">
-      {{ blockSliders.sliderQuotes }}
-    </div>
-  </div>
-  <div class="container">
-    <div class="slider-logos">
-      <div class="block-slider__title h3 hidden-tablet">
-        {{ blockSliders.title }}
-      </div>
-      <div class="slider-logos__list js-slider-nav">
-        {{ blockSliders.sliderLogos }}
-      </div>
-    </div>
-  </div>
+<div class="block-slider js-block-slider" id="block{{ blockSliders.id }}">
+	<div class="container">
+		<div class="block-slider__inner">
+			<h2 class="block-slider__title title-underline hidden--desktop">
+				{{ blockSliders.title }}
+			</h2>
+			<div class="block-slider__group">
+				<h2 class="block-slider__title h3 title-underline hidden--mobile hidden--tablet">
+					{{ blockSliders.title }}
+				</h2>
+				<div class="block-slider__logos">
+					{{ blockSliders.sliderLogos }}
+				</div>
+			</div>
+			<div class="block-slider__quotes bg--black text--white">
+				{{ blockSliders.sliderQuotes }}
+			</div>
+		</div>
+	</div>
 </div>

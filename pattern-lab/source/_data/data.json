@@ -1,5 +1,6 @@
 {
   "tablet": "(min-width: 768px)",
   "desktop": "(min-width: 1024px)",
+  "desktopLarge": "(min-width: 1440px)",
   "desktopWide": "(min-width: 1920px)"
 }

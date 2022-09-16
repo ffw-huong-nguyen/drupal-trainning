@@ -1,2 +1,12 @@
 .page-header {
   padding: 4.0625rem 0rem; }
+
+.page-header__linkbackto {
+  font-size: 1rem;
+  margin-bottom: 0.9375rem; }
+
+.page-header__categories {
+  font-size: 1.25rem; }
+  @media (min-width: 64em) {
+    .page-header__categories {
+      font-size: 1.4375rem; } }

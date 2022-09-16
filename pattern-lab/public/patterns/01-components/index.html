@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     
-    <link rel="stylesheet" href="../../css/style.css?1661140590" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1661140590" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1663295212" media="all" />
     
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
@@ -16,28 +16,32 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1661140590" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1661140590" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1663295212" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1663295212" media="all" />
     <!-- End Pattern Lab -->
 
     <!-- Css from theme -->
-    <link rel="stylesheet" href="../../../../lib/slick/slick.css?1661140590" media="all" />
-    <link rel="stylesheet" href="../../../../lib/slick/slick-theme.css?1661140590" media="all" />
-    <link rel="stylesheet" href="../../../../css/lib/slick.css?1661140590" media="all" />
-    <link rel="stylesheet" href="../../../../css/styles.css?1661140590" media="all" />
-    <link rel="stylesheet" href="../../../../css/components/block-example.css?1661140590" media="all" />
-    <link rel="stylesheet" href="../../../../css/components/block-banner.css?1661140590" media="all" />
-    <link rel="stylesheet" href="../../../../css/components/block-slider.css?1661140590" media="all" />
-    <link rel="stylesheet" href="../../../../css/components/block-social.css?1661140590" media="all" />
+    <link rel="stylesheet" href="../../../../css/styles.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../../../lib/slick/slick.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../../../lib/slick/slick-theme.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../../../css/lib/slick.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../../../css/components/block-example.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../../../css/components/block-banner.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../../../css/components/block-slider.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../../../css/components/block-social.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../../../css/components/page-header.css?1663295212" media="all" />
+    <link rel="stylesheet" href="../../../../css/components/block-content.css?1663295212" media="all" />
     <!-- End Css from theme -->
 
     <!-- Base js drupal 8 -->
-    <script src="../../js/drupal/jquery.min.js?1661140590"></script>
-    <script src="../../js/drupal/ready.min.js?1661140590"></script>
-    <script src="../../js/drupal/jquery.once.min.js?1661140590"></script>
-    <script src="../../js/drupal/drupal.js?1661140590"></script>
-    <script src="../../js/drupal/picturefill.min.js?1661140590"></script>
-    <script src="../../js/drupal/modernizr.min.js?1661140590"></script>
+    <script src="../../js/drupal/jquery.min.js?1663295212"></script>
+        <script src="../../js/drupal/element.matches.js?1663295212"></script>
+    <script src="../../js/drupal/once.min.js?1663295212"></script>
+    <script src="../../js/drupal/jquery.once.min.js?1663295212"></script>
+    <script src="../../js/drupal/drupal.js?1663295212"></script>
+    <script src="../../js/drupal/drupal.init.js?1663295212"></script>
+    <script src="../../js/drupal/picturefill.min.js?1663295212"></script>
+    <script src="../../js/drupal/modernizr.min.js?1663295212"></script>
     <!-- End - Base js drupal 8 -->
   </head>
   <body class="">
@@ -80,14 +84,16 @@
     <div class="block-banner">
   <div class="block-banner__background">
     <picture>
-    <source media="(min-width: 1024px)" srcset="https://via.placeholder.com/1920x1000.png">
-      <source media="(min-width: 768px)" srcset="https://via.placeholder.com/1024x1700.png">
-      <img src="https://via.placeholder.com/768x1200.png" alt="background-image">
+    <source media="(min-width: 1920px)" srcset="https://via.placeholder.com/1920x710.png">
+      <source media="(min-width: 1440px)" srcset="https://via.placeholder.com/1920x710.png">
+      <source media="(min-width: 1024px)" srcset="https://via.placeholder.com/1440x710.png">
+      <source media="(min-width: 768px)" srcset="https://via.placeholder.com/1024x1500.png">
+      <img src="https://via.placeholder.com/768x970.png" alt="background-image">
   </picture>
 
   </div>
   <div class="block-banner__wrap container">
-    <div class="block-banner__inner">
+    <div class="block-banner__inner clearfix">
       <div class="block-banner__left">
         <h1 class="block-banner__title">
           A New Approach to Enterprise Data Delivery & Access
@@ -107,7 +113,13 @@
         <div class="js-block-banner__slider">
       <div class="block-banner-slider">
   <div class="block-banner-slider__image">
-    <img src="https://picsum.photos/500/500" alt="Image" width="500" height="500" >
+    <picture>
+    <source media="(min-width: 1920px)" srcset="https://picsum.photos/500/500">
+      <source media="(min-width: 1440px)" srcset="https://picsum.photos/500/500">
+      <source media="(min-width: 1024px)" srcset="https://picsum.photos/500/500">
+      <source media="(min-width: 768px)" srcset="https://picsum.photos/1023/385">
+      <img src="https://picsum.photos/500/500" alt="background-image">
+  </picture>
 
   </div>
   <div class="block-banner-slider__image-small">
@@ -117,7 +129,13 @@
 </div>
       <div class="block-banner-slider">
   <div class="block-banner-slider__image">
-    <img src="https://picsum.photos/500/500" alt="Image" width="500" height="500" >
+    <picture>
+    <source media="(min-width: 1920px)" srcset="https://picsum.photos/500/500">
+      <source media="(min-width: 1440px)" srcset="https://picsum.photos/500/500">
+      <source media="(min-width: 1024px)" srcset="https://picsum.photos/500/500">
+      <source media="(min-width: 768px)" srcset="https://picsum.photos/1023/385">
+      <img src="https://picsum.photos/500/500" alt="background-image">
+  </picture>
 
   </div>
   <div class="block-banner-slider__image-small">
@@ -127,7 +145,13 @@
 </div>
       <div class="block-banner-slider">
   <div class="block-banner-slider__image">
-    <img src="https://picsum.photos/500/500" alt="Image" width="500" height="500" >
+    <picture>
+    <source media="(min-width: 1920px)" srcset="https://picsum.photos/500/500">
+      <source media="(min-width: 1440px)" srcset="https://picsum.photos/500/500">
+      <source media="(min-width: 1024px)" srcset="https://picsum.photos/500/500">
+      <source media="(min-width: 768px)" srcset="https://picsum.photos/1023/385">
+      <img src="https://picsum.photos/500/500" alt="background-image">
+  </picture>
 
   </div>
   <div class="block-banner-slider__image-small">
@@ -140,6 +164,7 @@
     </div>
   </div>
 </div>
+
   </div>
   
   <script type="text/json" id="sg-pattern-data-components-block-banner" class="sg-pattern-data">
@@ -179,7 +204,7 @@
     <div class="block-content bg--gray">
     <div class="container">
         <div class="block-content__inner">
-            <h3>About Delphix</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p><h3>The team</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p><h3>The role</h3><ul class='list'><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li></ul><p><i>You will receive files and databases, such as Oracle, SQL Server, and SAP HANA.</i></p>
+            <h3>About Delphix</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p><h3>The team</h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p><h3>The role</h3><ul class='list'><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li><li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li><li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li></ul><p><i>You will receive files and databases, such as Oracle, SQL Server, and SAP HANA.</i></p><p><a class='btn'>Apply</a></p>
         </div>
     </div>
 </div>
@@ -237,7 +262,7 @@
   </div>
 </div>
         <span class="block-example__image"><picture>
-    <source media="" srcset="https://picsum.photos/1920/610">
+        <source media="" srcset="https://picsum.photos/1920/610">
       <source media="" srcset="https://picsum.photos/1024/610">
       <img src="https://picsum.photos/768/430" alt="Picture">
   </picture>
@@ -259,74 +284,7 @@
   <div class="sg-pattern-body">
     
   </div>
-</div>                        <div id="components-block-slider-logo" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/01-components-block-slider-block-slider-logo/01-components-block-slider-block-slider-logo.html" class="patternLink" data-patternpartial="components-block-slider-logo" title="Link to Pattern">
-        block slider logo
-        
-              </a>
-    </h3>
-    
-    <div class="sg-pattern-breadcrumb">
-      
-    </div>
-    
-    <a href="#" data-patternpartial="components-block-slider-logo" title="View Pattern Info" id="sg-pattern-extra-toggle-components-block-slider-logo" class="sg-pattern-extra-toggle">
-      <span>&#9660;</span>
-    </a>
-  </div>
-  
-  <div class="sg-pattern-extra" id="sg-pattern-extra-components-block-slider-logo"></div>
-    
-  <div class="sg-pattern-example">
-    <div class="slider-logos__item" id="">
-  
-</div>
-
-  </div>
-  
-  <script type="text/json" id="sg-pattern-data-components-block-slider-logo" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"components","patternSubtype":"block slider"},"patternDesc":"","patternExtension":"twig","patternName":"block slider logo","patternPartial":"components-block-slider-logo","patternState":""}
-  </script>
-</div><!--end .sg-pattern-->                        <div id="components-block-slider-quote" class="sg-pattern">
-  <div class="sg-pattern-head">
-    <h3 class="sg-pattern-title">
-      <a href="../../patterns/01-components-block-slider-block-slider-quote/01-components-block-slider-block-slider-quote.html" class="patternLink" data-patternpartial="components-block-slider-quote" title="Link to Pattern">
-        block slider quote
-        
-              </a>
-    </h3>
-    
-    <div class="sg-pattern-breadcrumb">
-      
-    </div>
-    
-    <a href="#" data-patternpartial="components-block-slider-quote" title="View Pattern Info" id="sg-pattern-extra-toggle-components-block-slider-quote" class="sg-pattern-extra-toggle">
-      <span>&#9660;</span>
-    </a>
-  </div>
-  
-  <div class="sg-pattern-extra" id="sg-pattern-extra-components-block-slider-quote"></div>
-    
-  <div class="sg-pattern-example">
-    <div class="slider-quotes__item" id="">
-  <div class="slider-quotes__author">
-    
-  </div>
-  <blockquote>
-    
-  </blockquote>
-  <div class="slider-quotes__link">
-    
-  </div>
-</div>
-  </div>
-  
-  <script type="text/json" id="sg-pattern-data-components-block-slider-quote" class="sg-pattern-data">
-    {"lineage":[],"lineageR":[],"patternBreadcrumb":{"patternType":"components","patternSubtype":"block slider"},"patternDesc":"","patternExtension":"twig","patternName":"block slider quote","patternPartial":"components-block-slider-quote","patternState":""}
-  </script>
-</div><!--end .sg-pattern-->                        <div id="components-block-slider" class="sg-pattern">
+</div>                        <div id="components-block-slider" class="sg-pattern">
   <div class="sg-pattern-head">
     <h3 class="sg-pattern-title">
       <a href="../../patterns/01-components-block-slider-block-slider/01-components-block-slider-block-slider.html" class="patternLink" data-patternpartial="components-block-slider" title="Link to Pattern">
@@ -347,170 +305,171 @@
   <div class="sg-pattern-extra" id="sg-pattern-extra-components-block-slider"></div>
     
   <div class="sg-pattern-example">
-    <div class="block-slider">
-  <div class="slider-quotes">
-    <div class="block-slider__title h2 container hidden-desktop">
-      Our customers benefit from having the right data at the right time
-    </div>
-    <div class="slider-quotes__list js-slider-for bg--black text--white">
-        <div class="slider-quotes__item" id="tab-1">
-  <div class="slider-quotes__author">
+    <div class="block-slider js-block-slider" id="block22">
+	<div class="container">
+		<div class="block-slider__inner">
+			<h2 class="block-slider__title title-underline hidden--desktop">
+				Our customers benefit from having the right data at the right time
+			</h2>
+			<div class="block-slider__group">
+				<h2 class="block-slider__title h3 title-underline hidden--mobile hidden--tablet">
+					Our customers benefit from having the right data at the right time
+				</h2>
+				<div class="block-slider__logos">
+					  <div class="block-slider-logo">
+  <img src="https://via.placeholder.com/150x120.png" alt="Image" width="150" height="120" >
+
+</div>
+
+  <div class="block-slider-logo">
+  <img src="https://via.placeholder.com/150x70.png" alt="Image" width="150" height="70" >
+
+</div>
+
+  <div class="block-slider-logo">
+  <img src="https://via.placeholder.com/150x70.png" alt="Image" width="150" height="70" >
+
+</div>
+
+  <div class="block-slider-logo">
+  <img src="https://via.placeholder.com/100x70.png" alt="Image" width="100" height="70" >
+
+</div>
+
+  <div class="block-slider-logo">
+  <img src="https://via.placeholder.com/170x200.png" alt="Image" width="170" height="200" >
+
+</div>
+
+  <div class="block-slider-logo">
+  <img src="https://via.placeholder.com/150x140.png" alt="Image" width="150" height="140" >
+
+</div>
+
+  <div class="block-slider-logo">
+  <img src="https://via.placeholder.com/150x70.png" alt="Image" width="150" height="70" >
+
+</div>
+
+  <div class="block-slider-logo">
+  <img src="https://via.placeholder.com/150x70.png" alt="Image" width="150" height="70" >
+
+</div>
+
+  <div class="block-slider-logo">
+  <img src="https://via.placeholder.com/150x70.png" alt="Image" width="150" height="70" >
+
+</div>
+
+
+				</div>
+			</div>
+			<div class="block-slider__quotes bg--black text--white">
+				  <div class="block-slider-quote">
+  <div class="block-slider-quote__author">
     Kyle Welsh, CISO Boeing Employees' Credit Union 111
   </div>
   <blockquote>
     We reduced data risk and provided production-like data environments for developers
   </blockquote>
-  <div class="slider-quotes__link">
+  <div class="block-slider-quote__link">
     <a target="_blank" class="link--arrow link--white font--medium" href="#">Learn more</a>
   </div>
 </div>
-  <div class="slider-quotes__item" id="tab-2">
-  <div class="slider-quotes__author">
+  <div class="block-slider-quote">
+  <div class="block-slider-quote__author">
     Kyle Welsh, CISO Boeing Employees' Credit Union 222
   </div>
   <blockquote>
     We reduced data risk and provided production-like data environments for developers
   </blockquote>
-  <div class="slider-quotes__link">
+  <div class="block-slider-quote__link">
     <a target="_blank" class="link--arrow link--white font--medium" href="#">Learn more</a>
   </div>
 </div>
-  <div class="slider-quotes__item" id="tab-3">
-  <div class="slider-quotes__author">
+  <div class="block-slider-quote">
+  <div class="block-slider-quote__author">
     Kyle Welsh, CISO Boeing Employees' Credit Union 333
   </div>
   <blockquote>
     We reduced data risk and provided production-like data environments for developers
   </blockquote>
-  <div class="slider-quotes__link">
+  <div class="block-slider-quote__link">
     <a target="_blank" class="link--arrow link--white font--medium" href="#">Learn more</a>
   </div>
 </div>
-  <div class="slider-quotes__item" id="tab-4">
-  <div class="slider-quotes__author">
+  <div class="block-slider-quote">
+  <div class="block-slider-quote__author">
     Kyle Welsh, CISO Boeing Employees' Credit Union 444
   </div>
   <blockquote>
     We reduced data risk and provided production-like data environments for developers
   </blockquote>
-  <div class="slider-quotes__link">
+  <div class="block-slider-quote__link">
     <a target="_blank" class="link--arrow link--white font--medium" href="#">Learn more</a>
   </div>
 </div>
-  <div class="slider-quotes__item" id="tab-5">
-  <div class="slider-quotes__author">
+  <div class="block-slider-quote">
+  <div class="block-slider-quote__author">
     Kyle Welsh, CISO Boeing Employees' Credit Union 555
   </div>
   <blockquote>
     We reduced data risk and provided production-like data environments for developers
   </blockquote>
-  <div class="slider-quotes__link">
+  <div class="block-slider-quote__link">
     <a target="_blank" class="link--arrow link--white font--medium" href="#">Learn more</a>
   </div>
 </div>
-  <div class="slider-quotes__item" id="tab-6">
-  <div class="slider-quotes__author">
+  <div class="block-slider-quote">
+  <div class="block-slider-quote__author">
     Kyle Welsh, CISO Boeing Employees' Credit Union 666
   </div>
   <blockquote>
     We reduced data risk and provided production-like data environments for developers
   </blockquote>
-  <div class="slider-quotes__link">
+  <div class="block-slider-quote__link">
     <a target="_blank" class="link--arrow link--white font--medium" href="#">Learn more</a>
   </div>
 </div>
-  <div class="slider-quotes__item" id="tab-7">
-  <div class="slider-quotes__author">
+  <div class="block-slider-quote">
+  <div class="block-slider-quote__author">
     Kyle Welsh, CISO Boeing Employees' Credit Union 777
   </div>
   <blockquote>
     We reduced data risk and provided production-like data environments for developers
   </blockquote>
-  <div class="slider-quotes__link">
+  <div class="block-slider-quote__link">
     <a target="_blank" class="link--arrow link--white font--medium" href="#">Learn more</a>
   </div>
 </div>
-  <div class="slider-quotes__item" id="tab-8">
-  <div class="slider-quotes__author">
+  <div class="block-slider-quote">
+  <div class="block-slider-quote__author">
     Kyle Welsh, CISO Boeing Employees' Credit Union 888
   </div>
   <blockquote>
     We reduced data risk and provided production-like data environments for developers
   </blockquote>
-  <div class="slider-quotes__link">
+  <div class="block-slider-quote__link">
     <a target="_blank" class="link--arrow link--white font--medium" href="#">Learn more</a>
   </div>
 </div>
-  <div class="slider-quotes__item" id="tab-9">
-  <div class="slider-quotes__author">
+  <div class="block-slider-quote">
+  <div class="block-slider-quote__author">
     Kyle Welsh, CISO Boeing Employees' Credit Union 999
   </div>
   <blockquote>
     We reduced data risk and provided production-like data environments for developers
   </blockquote>
-  <div class="slider-quotes__link">
+  <div class="block-slider-quote__link">
     <a target="_blank" class="link--arrow link--white font--medium" href="#">Learn more</a>
   </div>
 </div>
 
-    </div>
-  </div>
-  <div class="container">
-    <div class="slider-logos">
-      <div class="block-slider__title h3 hidden-tablet">
-        Our customers benefit from having the right data at the right time
-      </div>
-      <div class="slider-logos__list js-slider-nav">
-          <div class="slider-logos__item" id="#tab-1">
-  <img src="https://via.placeholder.com/150x50.png" alt="Image" width="150" height="50" >
-
+			</div>
+		</div>
+	</div>
 </div>
 
-  <div class="slider-logos__item" id="#tab-2">
-  <img src="https://via.placeholder.com/150x50.png" alt="Image" width="150" height="50" >
-
-</div>
-
-  <div class="slider-logos__item" id="#tab-3">
-  <img src="https://via.placeholder.com/150x50.png" alt="Image" width="150" height="50" >
-
-</div>
-
-  <div class="slider-logos__item" id="#tab-4">
-  <img src="https://via.placeholder.com/150x50.png" alt="Image" width="150" height="50" >
-
-</div>
-
-  <div class="slider-logos__item" id="#tab-5">
-  <img src="https://via.placeholder.com/150x50.png" alt="Image" width="150" height="50" >
-
-</div>
-
-  <div class="slider-logos__item" id="#tab-6">
-  <img src="https://via.placeholder.com/150x50.png" alt="Image" width="150" height="50" >
-
-</div>
-
-  <div class="slider-logos__item" id="#tab-7">
-  <img src="https://via.placeholder.com/150x50.png" alt="Image" width="150" height="50" >
-
-</div>
-
-  <div class="slider-logos__item" id="#tab-8">
-  <img src="https://via.placeholder.com/150x50.png" alt="Image" width="150" height="50" >
-
-</div>
-
-  <div class="slider-logos__item" id="#tab-9">
-  <img src="https://via.placeholder.com/150x50.png" alt="Image" width="150" height="50" >
-
-</div>
-
-
-      </div>
-    </div>
-  </div>
-</div>
   </div>
   
   <script type="text/json" id="sg-pattern-data-components-block-slider" class="sg-pattern-data">
@@ -549,10 +508,13 @@
   <div class="sg-pattern-example">
     <div class="page-header">
   <div class="container">
-    <div><a target="_blank" class="link--arrow-back font--medium" href="#">Back to all careers</a></div>
+    <div class="page-header__linkbackto">
+      <a target="_blank" class="link--arrow-back text--uppercase font--medium" href="#">Back to all careers</a>
+    </div>
     <h1>Senior Director of Support Operations</h1>
-    <div class="list-links">
-              <a target="_blank" class="link" href="#">Customer Support</a>   |               <a target="_blank" class="link" href="#">Redwood califorima</a>   |               <a target="_blank" class="link" href="#">Full time</a>            </div>
+    <div class="page-header__categories fields-inline link-wrap--text">
+      <div class='field field--name-field-categories field--type-entity-reference field--label-hidden field__items'><div class='field__item'><a href='/taxonomy/term/1' hreflang='en'>Customer Support</a></div><div class='field__item'><a href='/taxonomy/term/2' hreflang='en'>Redwood califorima</a></div><div class='field__item'><a href='/taxonomy/term/3' hreflang='en'>Full time</a></div></div>
+    </div>
   </div>
 </div>
 
@@ -599,10 +561,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1661140590">
+<script id="pl-js-polyfill-insert-1663295212">
   (function() {
     if (self != top) {
-      var cb = '1661140590';
+      var cb = '1663295212';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -612,20 +574,20 @@
   })();
 </script>
 
-<script id="pl-js-insert-1661140590">
+<script id="pl-js-insert-1663295212">
   (function() {
     if (self != top) {
-      var cb = '1661140590';
+      var cb = '1663295212';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
   })();
 </script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js?1661140590"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js?1661140590"></script>
-  <script type="text/javascript" src="../../../../lib/slick/slick.min.js?1661140590"></script>
-  <script type="text/javascript" src="../../../../js/scripts.js?1661140590"></script>
-  <script type="text/javascript" src="../../../../js/components/block-banner.js?1661140590"></script>
-  <script type="text/javascript" src="../../../../js/components/block-slider.js?1661140590"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js?1663295212"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js?1663295212"></script>
+  <script type="text/javascript" src="../../../../lib/slick/slick.min.js?1663295212"></script>
+  <script type="text/javascript" src="../../../../js/scripts.js?1663295212"></script>
+  <script type="text/javascript" src="../../../../js/components/block-banner.js?1663295212"></script>
+  <script type="text/javascript" src="../../../../js/components/block-slider.js?1663295212"></script>
   </body>
 </html>

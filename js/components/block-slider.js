@@ -1,77 +1,57 @@
-(function ($) {
-  jQuery(document).ready(function ($) {
-    var $window = $(window);
+(function ($, Drupal, once) {
+  Drupal.behaviors.myBlockSlider = {
+    attach: function (context, settings) {
+      once('blockSliderBehavior', '.js-block-slider', context).forEach(function (element) {
 
-    function multiSlider() {
-      var windowsize = $window.width();
-      // slider on mobile
-      if (windowsize < 1024) {
-        $('.js-slider-for').slick({
+        var $parent =  $(element);
+        var id = $parent.attr('id');
+
+        $('.block-slider__quotes', $parent).slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           adaptiveHeight: true,
           speed: 800,
           autoplay: false,
           arrows: false,
-          swipe: false,
           fade: true,
-          asNavFor: '.js-slider-nav'
+          asNavFor: `#${id} .block-slider__logos`
         });
-
-        $('.js-slider-nav').slick({
+  
+        $('.block-slider__logos', $parent).slick({
           slidesToShow: 9,
           slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: '0',
           speed: 1000,
           autoplay: false,
           arrows: false,
-          dots: true,
-          asNavFor: '.js-slider-for',
+          dots: false,
+          focusOnSelect: true,
+          asNavFor: `#${id} .block-slider__quotes`,
           responsive: [
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 4
+                slidesToShow: 4,
+                dots: true,
               }
             },
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 3
+                slidesToShow: 3,
+                dots: true,
               }
             },
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 2
+                slidesToShow: 2,
+                dots: true,
               }
             }
           ]
         });
-      };
 
-      // tab on desktop
-      if (windowsize >= 1024) {
-        $('.slider-quotes__list').removeClass('js-slider-for');
-      }
-
-      // Show the first tab by default
-      $('.slider-quotes__item:not(:first-child)').hide();
-      $('.slider-logos__item:first').addClass('tab-active');
-
-      // Click logos make change text
-      $('.slider-logos__item').on('click', function (event) {
-        event.preventDefault();
-        $('.slider-logos__item').removeClass('tab-active');
-        $(this).addClass('tab-active');
-        $('.slider-quotes__item').hide();
-        $($(this).attr('id')).show();
       });
     }
-
-    multiSlider();
-    $(window).resize(multiSlider);
-
-  });
-})(jQuery);
+  };
+})(jQuery, Drupal, once);

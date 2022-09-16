@@ -16,11 +16,11 @@
 
 .h1,
 h1 {
-  font-size: rem(30px);
+  font-size: rem(50px);
   line-height: 1.35;
   letter-spacing: rem(0.5px);
 
-  @include susy-media(tablet) {
+  @include susy-media(desktop) {
     font-size: rem(56px);
     line-height: 1.3;
     letter-spacing: 0;
@@ -43,6 +43,7 @@ h2 {
 h3 {
   font-size: rem(25px);
   letter-spacing: rem(-0.5px);
+  margin-bottom: rem(11px);
 
   @include susy-media(tablet) {
     font-size: rem(30px);
@@ -66,7 +67,6 @@ h6 {
 }
 
 p {
-  font-size: rem(18px);
   line-height: 1.65;
   margin-bottom: rem(15px);
 }
@@ -139,7 +139,6 @@ blockquote {
   color: $link-color;
   text-decoration: none;
   transition: all 0.3s ease;
-  display: inline-block;
   cursor: pointer;
 
   &--text {
@@ -152,12 +151,12 @@ blockquote {
   }
 
   &--arrow {
-    display: flex;
-    align-items: center;
+    position: relative;
 
     &:after {
       @extend %icons;
       content: $icon-read-more;
+      position: absolute;
       margin-left: rem(20px);
       font-size: rem(23px);
       color: $link-color;
@@ -166,14 +165,16 @@ blockquote {
   }
 
   &--arrow-back {
-    display: flex;
-    align-items: center;
+    position: relative;
+    padding-left: rem(30px);
 
     &:before {
       @extend %icons;
       content: $icon-read-more;
-      margin-right: rem(20px);
-      font-size: rem(23px);
+      position: absolute;
+      left: 0;
+      margin-right: 0;
+      font-size: rem(20px);
       color: $link-color;
       transition: all 0.3s ease;
       transform: rotate(180deg);
@@ -203,26 +204,29 @@ a {
 }
 
 .link-wrap {
-  a {
-    @extend %link--text;
+  &--text {
+    a {
+      @extend %link--text;
+    }
   }
 }
 
 %list,
 .list {
-  li {
-    padding-left: rem(35px);
-    margin-bottom: rem(13px);
-    position: relative;
-
-    &:before {
-      content: '\2022';
-      position: absolute;
-      display: block;
-      top: rem(-10px);
-      left: 0;
-      position: absolute;
-      margin-top: rem(8px);
+  &--ul {
+    li {
+      padding-left: rem(35px);
+      margin-bottom: rem(13px);
+      position: relative;
+  
+      &:before {
+        content: '\2022';
+        position: absolute;
+        display: block;
+        top: rem(-10px);
+        left: 0;
+        margin-top: rem(8px);
+      }
     }
   }
 
@@ -242,7 +246,7 @@ a {
 
 .list-wrap {
   ul {
-    @extend %list;
+    @extend %list--ul;
   }
 
   ol {

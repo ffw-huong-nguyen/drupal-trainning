@@ -38,21 +38,23 @@
   }
 }
 
-.block-banner__inner {
-  @include susy-media(desktop) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .block-banner__left {
   @include susy-media(desktop) {
     width: 52%;
+    float: left;
+    margin-right: 6%;
+  }
+
+  @include susy-media(desktopLarge) {
+    margin-right: 16%;
   }
 }
 
 .block-banner__title {
+  font-size: rem(30px);
+
   @include susy-media(tablet) {
+    font-size: rem(56px);
     margin-bottom: rem(40px);
   }
 }
@@ -66,6 +68,69 @@
     font-size: rem(24px);
     margin-bottom: rem(40px);
   }
+}
+
+.block-banner__links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: rem(35px);
+
+  a {
+    font-size: rem(17px);
+  }
+}
+
+.block-banner__right {
+  position: relative;
+  margin-top: rem(40px);
+
+  @include susy-media(tablet) {
+    margin-top: rem(80px);
+  }
+
+  @include susy-media(desktop) {
+    width: 42%;
+    margin-top: 0;
+    display: inline-block;
+  }
+
+  @include susy-media(desktopLarge) {
+    width: 32%;
+  }
+
+  .slick-arrow {
+    top: auto;
+    bottom: rem(-24px);
+  }
+
+  .slick-prev {
+    left: auto;
+    right: rem(47px);
+  }
+
+  .slick-next {
+    right: 0;
+  }
+}
+
+.block-banner-slider {
+  position: relative;
+  padding-bottom: rem(48px);
+}
+
+.block-banner-slider__image {
+  img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.block-banner-slider__image-small {
+  position: absolute;
+  right: rem(94px);
+  bottom: 0;
 }
 
 .block-banner__form {
@@ -100,74 +165,4 @@
       }
     }
   }
-}
-
-.block-banner__links {
-  display: flex;
-  margin-top: rem(35px);
-
-  .tag {
-    color: $primary-color;
-    font-size: rem(12px);
-    line-height: 1;
-    padding: rem(5px 13px);
-    border: rem(1px) solid $primary-color;
-    border-radius: rem(6px);
-    margin-right: rem(10px);
-  }
-
-  a {
-    font-size: rem(17px);
-  }
-}
-
-.block-banner__right {
-  position: relative;
-  margin-top: rem(40px);
-
-  @include susy-media(tablet) {
-    margin-top: rem(80px);
-  }
-
-  @include susy-media(desktop) {
-    width: 42%;
-    margin-top: 0;
-  }
-
-  @include susy-media(desktopLarge) {
-    width: 32%;
-  }
-
-  .slick-arrow {
-    bottom: rem(-24px);
-  }
-
-  .slick-prev {
-    left: auto;
-    right: 47px;
-  }
-
-  .slick-next {
-    right: 0;
-  }
-}
-
-.block-banner-slider {
-  position: relative;
-  padding-bottom: rem(48px);
-}
-
-.block-banner-slider__image {
-  img {
-    width: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    max-height: rem(400px);
-  }
-}
-
-.block-banner-slider__image-small {
-  position: absolute;
-  right: rem(93px);
-  bottom: 0;
 }

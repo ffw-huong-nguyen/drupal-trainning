@@ -1,0 +1,17 @@
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/mixins';
+
+.tag {
+  color: $primary-color;
+  font-size: rem(12px);
+  line-height: 1;
+  padding: rem(5px 13px);
+  border: rem(1px) solid $primary-color;
+  border-radius: rem(6px);
+  margin-right: rem(10px);
+}

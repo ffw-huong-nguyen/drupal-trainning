@@ -1,13 +1,15 @@
 {
   "blockBanner": {
-    "bgrImage": {
+    "bgImage": {
       "include()": {
         "pattern": "base-picture",
         "with": {
           "picture": {
-            "srcDesktop": "https://via.placeholder.com/1920x1000.png",
-            "srcTablet": "https://via.placeholder.com/1024x1700.png",
-            "src": "https://via.placeholder.com/768x1200.png",
+            "srcDesktopWide": "https://via.placeholder.com/1920x710.png",
+            "srcDesktopLarge": "https://via.placeholder.com/1920x710.png",
+            "srcDesktop": "https://via.placeholder.com/1440x710.png",
+            "srcTablet": "https://via.placeholder.com/1024x1500.png",
+            "src": "https://via.placeholder.com/768x970.png",
             "alt": "background-image"
           },
           "only": true
@@ -44,16 +46,18 @@
                     "sliderItem": {
                       "bigImage": {
                         "include()": {
-                          "pattern": "base-image",
+                          "pattern": "base-picture",
                           "with": {
-                            "image": {
+                            "picture": {
+                              "srcDesktopWide": "https://picsum.photos/500/500",
+                              "srcDesktopLarge": "https://picsum.photos/500/500",
+                              "srcDesktop": "https://picsum.photos/500/500",
+                              "srcTablet": "https://picsum.photos/1023/385",
                               "src": "https://picsum.photos/500/500",
-                              "alt": "Image",
-                              "width": "500",
-                              "height": "500"
-                            }
-                          },
-                          "only": true
+                              "alt": "background-image"
+                            },
+                            "only": true
+                          }
                         }
                       },
                       "smallImage": {
@@ -84,16 +88,18 @@
                     "sliderItem": {
                       "bigImage": {
                         "include()": {
-                          "pattern": "base-image",
+                          "pattern": "base-picture",
                           "with": {
-                            "image": {
+                            "picture": {
+                              "srcDesktopWide": "https://picsum.photos/500/500",
+                              "srcDesktopLarge": "https://picsum.photos/500/500",
+                              "srcDesktop": "https://picsum.photos/500/500",
+                              "srcTablet": "https://picsum.photos/1023/385",
                               "src": "https://picsum.photos/500/500",
-                              "alt": "Image",
-                              "width": "500",
-                              "height": "500"
-                            }
-                          },
-                          "only": true
+                              "alt": "background-image"
+                            },
+                            "only": true
+                          }
                         }
                       },
                       "smallImage": {
@@ -124,16 +130,18 @@
                     "sliderItem": {
                       "bigImage": {
                         "include()": {
-                          "pattern": "base-image",
+                          "pattern": "base-picture",
                           "with": {
-                            "image": {
+                            "picture": {
+                              "srcDesktopWide": "https://picsum.photos/500/500",
+                              "srcDesktopLarge": "https://picsum.photos/500/500",
+                              "srcDesktop": "https://picsum.photos/500/500",
+                              "srcTablet": "https://picsum.photos/1023/385",
                               "src": "https://picsum.photos/500/500",
-                              "alt": "Image",
-                              "width": "500",
-                              "height": "500"
-                            }
-                          },
-                          "only": true
+                              "alt": "background-image"
+                            },
+                            "only": true
+                          }
                         }
                       },
                       "smallImage": {

@@ -10,3 +10,16 @@
 .page-header {
   padding: rem(65px 0);
 }
+
+.page-header__linkbackto {
+  font-size: rem(16px);
+  margin-bottom: rem(15px);
+}
+
+.page-header__categories {
+  font-size: rem(20px);
+
+  @include susy-media(desktop) {
+    font-size: rem(23px);
+  }
+}

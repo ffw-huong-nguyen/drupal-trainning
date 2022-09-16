@@ -37,6 +37,10 @@
   &--small {
     font-size: rem(12px);
   }
+
+  // &--large {
+  //   font-size: rem(23px);
+  // }
 }
 
 .text {
@@ -72,22 +76,59 @@
 .hidden {
   display: none;
 
-  &-mobile {
+  &--mobile {
     @include susy-media(mobileOnly) {
       display: none;
     }
   }
   
-  &-tablet {
+  &--tablet {
     @include susy-media(tabletOnly) {
       display: none;
     }
   }
   
-  &-desktop {
+  &--desktop {
     @include susy-media(desktop) {
       display: none;
     }
   }
 }
 
+.title-underline {
+  position: relative;
+  padding-bottom: rem(6px);
+  
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: rem(45px);
+    height: rem(2px);
+    background: $primary-color;
+
+    @include susy-media(tablet) {
+      width: rem(73px);
+    }
+  }
+}
+
+.fields-inline {
+  .field__item {
+    margin-right: rem(6px);
+    display: inline;
+
+    &::after {
+      content: "|";
+      margin-left: 5px;
+      display: inline-block;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
         "with": {
           "link": {
             "target": "",
-            "class": "link--arrow-back font--medium",
+            "class": "link--arrow-back text--uppercase font--medium",
             "href": "#",
             "text": "Back to all careers"
           }
@@ -15,49 +15,6 @@
       }
     },
     "title": "Senior Director of Support Operations",
-    "items": [
-      {
-        "include()": {
-          "pattern": "base-link",
-          "with": {
-            "link": {
-              "target": "",
-              "class": "link",
-              "href": "#",
-              "text": "Customer Support"
-            }
-          },
-          "only": true
-        }
-      },
-      {
-        "include()": {
-          "pattern": "base-link",
-          "with": {
-            "link": {
-              "target": "",
-              "class": "link",
-              "href": "#",
-              "text": "Redwood califorima"
-            }
-          },
-          "only": true
-        }
-      },
-      {
-        "include()": {
-          "pattern": "base-link",
-          "with": {
-            "link": {
-              "target": "",
-              "class": "link",
-              "href": "#",
-              "text": "Full time"
-            }
-          },
-          "only": true
-        }
-      }
-    ]
+    "categories": "<div class='field field--name-field-categories field--type-entity-reference field--label-hidden field__items'><div class='field__item'><a href='/taxonomy/term/1' hreflang='en'>Customer Support</a></div><div class='field__item'><a href='/taxonomy/term/2' hreflang='en'>Redwood califorima</a></div><div class='field__item'><a href='/taxonomy/term/3' hreflang='en'>Full time</a></div></div>"
   }
 }

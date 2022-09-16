@@ -7,12 +7,14 @@ $tablet: 768px;
 $desktop: 1024px;
 $desktop-large: 1280px;
 $desktop-wide: 1440px;
-$desktop-superwide: 1680px;
+$desktop-superwide: 1920px;
 
 // Grid variables
 $container: 1176px; // fixed from 1280px;
 $container-large: 1450px; // fixed from 1680px;
 $container-margin: 10px;  // screen < 768px
+$container-margin-tablet: 20px;  // screen < 1024px
+$container-margin-desktop: 70px;  // screen < 1440px
 
 $column-mobile: 4;
 $column-tablet: 8;
@@ -55,7 +57,7 @@ $susy: (
 );
 
 $susy-tablet: (
-  container-position: rem($container-margin * 2),
+  container-position: rem($container-margin-tablet),
   container: auto,
   columns: $column-tablet,
   gutters: 38px / 59px,
@@ -69,7 +71,7 @@ $susy-tablet: (
 );
 
 $susy-desktop: (
-  container-position: rem($container-margin * 6.5),
+  container-position: rem($container-margin-desktop),
   container: auto,
   columns: $column-desktop-wide,
   gutters: 36px / 62px,
@@ -154,7 +156,7 @@ $susy-media: (
   // min-width: 1024px
   desktop: em($desktop) * 1em,
 
-  // min-width: 1440px
+  // min-width: 1280px
   desktopLarge: em($desktop-large) * 1em,
 
   // min-width: 1440px

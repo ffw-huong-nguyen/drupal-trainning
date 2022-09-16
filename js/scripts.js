@@ -8,12 +8,14 @@
 // }
 // });
 
-(function ($) {
-  $(document).ready(function ($) {
-    // menu on mobile
-    $(document).on('click', '.js-open-menu', function () {
-      $('.header-main__menu').toggle();
-      $('body').toggleClass('show-menu');
-    });
-  });
-})(jQuery);
+(function ($, Drupal) {
+  Drupal.behaviors.menuMobile = {
+    attach: function (context, settings) {
+      $(document).on('click', '.js-open-menu', function () {
+        $('.header-main__menu').toggle();
+        $('body').toggleClass('show-menu');
+      });
+    }
+  }
+} (jQuery, Drupal));
+

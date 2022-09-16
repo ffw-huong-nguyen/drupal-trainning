@@ -1,11 +1,11 @@
 <div class="page-header">
   <div class="container">
-    <div>{{ pageHeader.linkBackTo }}</div>
+    <div class="page-header__linkbackto">
+      {{ pageHeader.linkBackTo }}
+    </div>
     <h1>{{ pageHeader.title }}</h1>
-    <div class="list-links">
-      {% for item in pageHeader.items %}
-        {{ item }}  {% if not loop.last %} | {% endif %}
-      {% endfor %}
+    <div class="page-header__categories fields-inline link-wrap--text">
+      {{ pageHeader.categories }}
     </div>
   </div>
 </div>

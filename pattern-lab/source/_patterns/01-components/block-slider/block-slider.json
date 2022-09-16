@@ -1,9 +1,10 @@
 {
   "blockSliders": {
+    "id": "22",
     "title": "Our customers benefit from having the right data at the right time",
     "sliderLogos": {
       "include()": {
-        "pattern": "base-loop",
+        "pattern": "base-field-stable",
         "with": {
           "items": [
             {
@@ -12,16 +13,15 @@
                   "pattern": "components-block-slider-logo",
                   "with": {
                     "sliderLogo": {
-                      "tabID": "#tab-1",
                       "logo": {
                         "include()": {
                           "pattern": "base-image",
                           "with": {
                             "image": {
-                              "src": "https://via.placeholder.com/150x50.png",
+                              "src": "https://via.placeholder.com/150x120.png",
                               "alt": "Image",
                               "width": "150",
-                              "height": "50"
+                              "height": "120"
                             }
                           },
                           "only": true
@@ -39,16 +39,15 @@
                   "pattern": "components-block-slider-logo",
                   "with": {
                     "sliderLogo": {
-                      "tabID": "#tab-2",
                       "logo": {
                         "include()": {
                           "pattern": "base-image",
                           "with": {
                             "image": {
-                              "src": "https://via.placeholder.com/150x50.png",
+                              "src": "https://via.placeholder.com/150x70.png",
                               "alt": "Image",
                               "width": "150",
-                              "height": "50"
+                              "height": "70"
                             }
                           },
                           "only": true
@@ -66,16 +65,15 @@
                   "pattern": "components-block-slider-logo",
                   "with": {
                     "sliderLogo": {
-                      "tabID": "#tab-3",
                       "logo": {
                         "include()": {
                           "pattern": "base-image",
                           "with": {
                             "image": {
-                              "src": "https://via.placeholder.com/150x50.png",
+                              "src": "https://via.placeholder.com/150x70.png",
                               "alt": "Image",
                               "width": "150",
-                              "height": "50"
+                              "height": "70"
                             }
                           },
                           "only": true
@@ -93,16 +91,15 @@
                   "pattern": "components-block-slider-logo",
                   "with": {
                     "sliderLogo": {
-                      "tabID": "#tab-4",
                       "logo": {
                         "include()": {
                           "pattern": "base-image",
                           "with": {
                             "image": {
-                              "src": "https://via.placeholder.com/150x50.png",
+                              "src": "https://via.placeholder.com/100x70.png",
                               "alt": "Image",
-                              "width": "150",
-                              "height": "50"
+                              "width": "100",
+                              "height": "70"
                             }
                           },
                           "only": true
@@ -120,16 +117,15 @@
                   "pattern": "components-block-slider-logo",
                   "with": {
                     "sliderLogo": {
-                      "tabID": "#tab-5",
                       "logo": {
                         "include()": {
                           "pattern": "base-image",
                           "with": {
                             "image": {
-                              "src": "https://via.placeholder.com/150x50.png",
+                              "src": "https://via.placeholder.com/170x200.png",
                               "alt": "Image",
-                              "width": "150",
-                              "height": "50"
+                              "width": "170",
+                              "height": "200"
                             }
                           },
                           "only": true
@@ -147,16 +143,15 @@
                   "pattern": "components-block-slider-logo",
                   "with": {
                     "sliderLogo": {
-                      "tabID": "#tab-6",
                       "logo": {
                         "include()": {
                           "pattern": "base-image",
                           "with": {
                             "image": {
-                              "src": "https://via.placeholder.com/150x50.png",
+                              "src": "https://via.placeholder.com/150x140.png",
                               "alt": "Image",
                               "width": "150",
-                              "height": "50"
+                              "height": "140"
                             }
                           },
                           "only": true
@@ -174,16 +169,15 @@
                   "pattern": "components-block-slider-logo",
                   "with": {
                     "sliderLogo": {
-                      "tabID": "#tab-7",
                       "logo": {
                         "include()": {
                           "pattern": "base-image",
                           "with": {
                             "image": {
-                              "src": "https://via.placeholder.com/150x50.png",
+                              "src": "https://via.placeholder.com/150x70.png",
                               "alt": "Image",
                               "width": "150",
-                              "height": "50"
+                              "height": "70"
                             }
                           },
                           "only": true
@@ -201,16 +195,15 @@
                   "pattern": "components-block-slider-logo",
                   "with": {
                     "sliderLogo": {
-                      "tabID": "#tab-8",
                       "logo": {
                         "include()": {
                           "pattern": "base-image",
                           "with": {
                             "image": {
-                              "src": "https://via.placeholder.com/150x50.png",
+                              "src": "https://via.placeholder.com/150x70.png",
                               "alt": "Image",
                               "width": "150",
-                              "height": "50"
+                              "height": "70"
                             }
                           },
                           "only": true
@@ -228,16 +221,15 @@
                   "pattern": "components-block-slider-logo",
                   "with": {
                     "sliderLogo": {
-                      "tabID": "#tab-9",
                       "logo": {
                         "include()": {
                           "pattern": "base-image",
                           "with": {
                             "image": {
-                              "src": "https://via.placeholder.com/150x50.png",
+                              "src": "https://via.placeholder.com/150x70.png",
                               "alt": "Image",
                               "width": "150",
-                              "height": "50"
+                              "height": "70"
                             }
                           },
                           "only": true
@@ -256,7 +248,7 @@
     },
     "sliderQuotes": {
       "include()": {
-        "pattern": "base-loop",
+        "pattern": "base-field-stable",
         "with": {
           "items": [
             {
@@ -265,7 +257,6 @@
                   "pattern": "components-block-slider-quote",
                   "with": {
                     "sliderQuote": {
-                      "tabID": "tab-1",
                       "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 111",
                       "quote": "We reduced data risk and provided production-like data environments for developers",
                       "link": {
@@ -294,7 +285,6 @@
                   "pattern": "components-block-slider-quote",
                   "with": {
                     "sliderQuote": {
-                      "tabID": "tab-2",
                       "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 222",
                       "quote": "We reduced data risk and provided production-like data environments for developers",
                       "link": {
@@ -323,7 +313,6 @@
                   "pattern": "components-block-slider-quote",
                   "with": {
                     "sliderQuote": {
-                      "tabID": "tab-3",
                       "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 333",
                       "quote": "We reduced data risk and provided production-like data environments for developers",
                       "link": {
@@ -352,7 +341,6 @@
                   "pattern": "components-block-slider-quote",
                   "with": {
                     "sliderQuote": {
-                      "tabID": "tab-4",
                       "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 444",
                       "quote": "We reduced data risk and provided production-like data environments for developers",
                       "link": {
@@ -381,7 +369,6 @@
                   "pattern": "components-block-slider-quote",
                   "with": {
                     "sliderQuote": {
-                      "tabID": "tab-5",
                       "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 555",
                       "quote": "We reduced data risk and provided production-like data environments for developers",
                       "link": {
@@ -410,7 +397,6 @@
                   "pattern": "components-block-slider-quote",
                   "with": {
                     "sliderQuote": {
-                      "tabID": "tab-6",
                       "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 666",
                       "quote": "We reduced data risk and provided production-like data environments for developers",
                       "link": {
@@ -439,7 +425,6 @@
                   "pattern": "components-block-slider-quote",
                   "with": {
                     "sliderQuote": {
-                      "tabID": "tab-7",
                       "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 777",
                       "quote": "We reduced data risk and provided production-like data environments for developers",
                       "link": {
@@ -468,7 +453,6 @@
                   "pattern": "components-block-slider-quote",
                   "with": {
                     "sliderQuote": {
-                      "tabID": "tab-8",
                       "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 888",
                       "quote": "We reduced data risk and provided production-like data environments for developers",
                       "link": {
@@ -497,7 +481,6 @@
                   "pattern": "components-block-slider-quote",
                   "with": {
                     "sliderQuote": {
-                      "tabID": "tab-9",
                       "author": "Kyle Welsh, CISO Boeing Employees' Credit Union 999",
                       "quote": "We reduced data risk and provided production-like data environments for developers",
                       "link": {

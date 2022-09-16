@@ -4,13 +4,13 @@
 @import '../imports/functions';
 @import '../imports/colors';
 @import '../imports/variables';
+@import '../imports/_icons-variables';
 @import '../imports/mixins';
 
 .slick-arrow {
   position: absolute;
   background: $white;
   z-index: 2;
-  top: auto;
   width: auto;
   height: auto;
   padding: rem(18px 17px);
@@ -21,10 +21,45 @@
     color: $black;
     font-size: rem(12px);
     font-weight: 700;
+    @include iconmoon;
   }
 
   &:hover,
   &:focus {
     background: white;
+  }
+}
+
+.slick-prev {
+  &:before {
+    content: $icon-chevron-thin-left;
+  }
+}
+
+.slick-next {
+  &:before {
+    content: $icon-chevron-thin-right;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: rem(-25px);
+
+  li {
+    margin: rem(0 1px);
+
+    button:before {
+      font-size: rem(10px);
+    }
+
+    &.slick-active {
+      button:before {
+        color: $primary-color;
+        font-size: rem(13px);
+      }
+    }
   }
 }
