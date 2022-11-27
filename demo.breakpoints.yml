@@ -1,0 +1,36 @@
+custom_theme.xs:
+  label: Extra_small
+  mediaQuery: "(min-width: 0px)"
+  weight: 1
+  multipliers:
+    - 1x
+custom_theme.sm:
+  label: Small
+  mediaQuery: "(min-width: 400px)"
+  weight: 1
+  multipliers:
+    - 1x
+custom_theme.md:
+  label: Medium
+  mediaQuery: "(min-width: 768px)"
+  weight: 2
+  multipliers:
+    - 1x
+custom_theme.lg:
+  label: Large
+  mediaQuery: "(min-width: 1024px)"
+  weight: 3
+  multipliers:
+    - 1x
+custom_theme.wd:
+  label: Wide
+  mediaQuery: "(min-width: 1440px)"
+  weight: 4
+  multipliers:
+    - 1x
+custom_theme.spwd:
+  label: SuperWide
+  mediaQuery: "(min-width: 1920px)"
+  weight: 5
+  multipliers:
+    - 1x

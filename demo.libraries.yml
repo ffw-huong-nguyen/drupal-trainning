@@ -1,0 +1,64 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/styles.css: {}
+      css/components/block-social.css: {}
+  js:
+    js/scripts.js: {}
+
+slick:
+  css:
+    theme:
+      lib/slick/slick.css: {}
+      lib/slick/slick-theme.css: {}
+      css/lib/slick.css: {}
+  js:
+    lib/slick/slick.min.js: {}
+
+block-banner:
+  css:
+    theme:
+      css/components/block-banner.css: {}
+  js:
+    js/components/block-banner.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - demo/slick
+
+block-slider:
+  css:
+    theme:
+      css/components/block-slider.css: {}
+  js:
+    js/components/block-slider.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - demo/slick
+
+page-header:
+  css:
+    theme:
+      css/components/page-header.css: {}
+
+block-content:
+  css:
+    theme:
+      css/components/block-content.css: {}
+
+block-events:
+  css:
+    theme:
+      css/components/block-events.css: {}
+  js:
+    js/components/block-events.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+ 

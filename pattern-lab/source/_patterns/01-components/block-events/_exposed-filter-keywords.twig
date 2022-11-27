@@ -1,0 +1,8 @@
+<div class="exposed-filter__keywords">
+	{% for item in items %}
+		<span class="exposed-filter__keywords__item bg--gray" {{item.nohidden ? "" : "style='display:none;'"}}>
+			<i class="exposed-filter__keywords__close js-exposed-filter__keywords__close icon-close" data-id="{{item.id}}"></i>
+			{{ item.keyword }}
+		</span>
+	{% endfor %}
+</div>

@@ -11,6 +11,7 @@ input[type="submit"] {
   height: rem(44px);
   padding: rem(7px 20px);
   transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
   width: 100%;
 
   &::-ms-clear {

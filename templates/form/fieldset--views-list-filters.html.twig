@@ -1,0 +1,81 @@
+{#
+/**
+ * @file
+ * Theme override for a fieldset element and its children.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the fieldset element.
+ * - errors: (optional) Any errors for this fieldset element, may not be set.
+ * - required: Boolean indicating whether the fieldset element is required.
+ * - legend: The legend element containing the following properties:
+ *   - title: Title of the fieldset, intended for use as the text of the legend.
+ *   - attributes: HTML attributes to apply to the legend.
+ * - description: The description element containing the following properties:
+ *   - content: The description content of the fieldset.
+ *   - attributes: HTML attributes to apply to the description container.
+ * - description_display: Description display setting. It can have these values:
+ *   - before: The description is output before the element.
+ *   - after: The description is output after the element (default).
+ *   - invisible: The description is output after the element, hidden visually
+ *     but available to screen readers.
+ * - children: The rendered child elements of the fieldset.
+ * - prefix: The content to add before the fieldset children.
+ * - suffix: The content to add after the fieldset children.
+ *
+ * @see template_preprocess_fieldset()
+ */
+#}
+{%
+  set classes = [
+    'exposed-filter__item',
+    'js-form-item',
+    'form-item',
+    'js-form-wrapper',
+    'form-wrapper',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {%
+    set legend_span_classes = [
+      'exposed-filter__label',
+      required ? 'js-form-required',
+      required ? 'form-required',
+    ]
+  %}
+  {#  Always wrap fieldset legends in a <span> for CSS positioning. #}
+  <div{{ legend_span.attributes.addClass(legend_span_classes) }}>
+    {{ legend.title }}
+    <span class="exposed-filter__toggle js-exposed-filter__toggle">
+      <span class="icon-arrow-down exposed-filter__arrow"></span>
+      <span class="text-show">
+        <strong>Show</strong>
+      </span>
+      <span class="text-hide">
+        <strong>Hide</strong>
+      </span>
+    </a>
+  </div>
+  <div class="fieldset-wrapper">
+    {% if description_display == 'before' and description.content %}
+      <div{{ description.attributes.addClass('description') }}>{{ description.content }}</div>
+    {% endif %}
+    {% if errors %}
+      <div class="form-item--error-message">
+        <strong>{{ errors }}</strong>
+      </div>
+    {% endif %}
+    {% if prefix %}
+      <span class="field-prefix">{{ prefix }}</span>
+    {% endif %}
+    <div class="exposed-filter__content">
+      {{ children }}
+    </div>
+    {% if suffix %}
+      <span class="field-suffix">{{ suffix }}</span>
+    {% endif %}
+    {% if description_display in ['after', 'invisible'] and description.content %}
+      <div{{ description.attributes.addClass('description') }}>{{ description.content }}</div>
+    {% endif %}
+  </div>
+</div>

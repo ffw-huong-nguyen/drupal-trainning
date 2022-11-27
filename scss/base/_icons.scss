@@ -59,3 +59,26 @@
     content: $icon-chevron-thin-left;
   }
 }
+
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down;
+  }
+}
+
+.icon-close {
+  &:before {
+    content: $icon-close;
+  }
+}
+
+.icon-angle-up {
+  &:before {
+    content: $icon-angle-up;
+  }
+}
+.icon-angle-down {
+  &:before {
+    content: $icon-angle-down;
+  }
+}

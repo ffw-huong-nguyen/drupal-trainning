@@ -253,3 +253,15 @@ a {
     @extend %list--ol;
   }
 }
+
+.list-toggle {
+  li {
+    position: relative;
+
+    span, i {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}

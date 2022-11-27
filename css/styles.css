@@ -326,6 +326,18 @@ iframe {
 .icon-chevron-thin-left:before {
   content: ""; }
 
+.icon-arrow-down:before {
+  content: ""; }
+
+.icon-close:before {
+  content: ""; }
+
+.icon-angle-up:before {
+  content: ""; }
+
+.icon-angle-down:before {
+  content: ""; }
+
 .h1, h1,
 .h2, h2,
 .h3, h3,
@@ -518,6 +530,13 @@ a,
     .list--ol li:before {
       content: none; }
 
+.list-toggle li {
+  position: relative; }
+  .list-toggle li span, .list-toggle li i {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
 table {
   margin-bottom: 0.9375rem;
   width: 100%; }
@@ -603,6 +622,7 @@ input[type="number"], textarea,
   height: 2.75rem;
   padding: 0.4375rem 1.25rem;
   transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
   width: 100%; }
   input[type="tel"]::-ms-clear,
   input[type="text"]::-ms-clear,

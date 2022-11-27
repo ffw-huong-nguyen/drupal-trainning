@@ -1,0 +1,20 @@
+<div class="block-events__item">
+  <div class="block-events__inner">
+    <h2 class="block-events__title">
+      <a href="{{ blockeventItem.url }}">{{ blockeventItem.title }}</a>
+    </h2>
+    <div class="block-events__time">
+      <b>Date:</b> {{ blockeventItem.date }}
+    </div>
+    <div class="block-events__topic fields-inline link-wrap--text">
+      {{ blockeventItem.topic }}
+    </div>
+    <div class="block-events__region fields-inline link-wrap--text">
+      {{ blockeventItem.region }}
+    </div>
+    <div class="block-events__body">
+      {{ blockeventItem.body }}
+    </div>
+  </div>
+  <span class="js-block-events__show-body block-events__show-body icon-angle-down"></span>
+</div>

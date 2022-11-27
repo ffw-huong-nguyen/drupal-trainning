@@ -1,0 +1,194 @@
+// Create a separate component, we need to require some variables and mixins.
+// Required imports
+@import '../../vendor/susy/susy';
+@import '../imports/functions';
+@import '../imports/colors';
+@import '../imports/variables';
+@import '../imports/mixins';
+@import '../imports/icons-variables';
+
+.block-events__title {
+  line-height: 1;
+
+  a {
+    color: $dark-red;
+    font-size: rem(25px);
+    line-height: 1.2;
+  }
+}
+
+.block-events__group {
+  @include susy-media(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.block-events__filter {
+  @include susy-media(tablet) {
+    width: 30%;
+  }
+}
+
+.block-events__content {
+  @include susy-media(tablet) {
+    width: 65%;
+  }
+}
+
+.block-events__item {
+  padding: rem(30px 40px);
+  box-shadow: $silver 0px 2px 8px 0px;
+  margin-bottom: rem(40px);
+}
+
+.block-events__body {
+  height: 0;
+  overflow: hidden;
+}
+
+.block-events__show-body {
+  display: block;
+  text-align: right;
+  font-size: rem(25px);
+  color: $dark-red;
+  line-height: 0;
+
+  &::before {
+    cursor: pointer;
+  }
+}
+
+// Exposed Filters ------------------
+
+.exposed-filter__item {
+  margin-bottom: rem(30px);
+}
+
+.exposed-filter__label {
+  position: relative;
+  display: block;
+  color: $dark-red;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-right: rem(100px);
+  padding-bottom: rem(5px);
+  margin-bottom: rem(20px);
+  border-bottom: rem(1px) solid $gray;
+}
+
+.exposed-filter__content {
+
+  .list-toggle {
+    ul {
+      margin-left: rem(15px);
+    }
+
+    li {
+      > ul {
+        display: none;
+      }
+
+      &.show-child {
+        > .exposed-filter__icon:before {
+          display: inline-block;
+          transform: rotate(180deg);
+        }
+  
+        > ul {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.exposed-filter__toggle {
+  position: absolute;
+  right: 0;
+  font-size: rem(16px);
+  color: $primary-color;
+  text-transform: none;
+  cursor: pointer;
+
+  .text-show {
+    display: none;
+  }
+
+  .exposed-filter__arrow:before {
+    display: inline-block;
+  }
+}
+
+.exposed-filter__content {
+  .form-type-checkbox {
+    input {
+      margin-right: rem(10px);
+    }
+  }
+}
+
+.exposed-filter__icon {
+  display: inline-block;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.block-events__item {
+
+  &.show-body {
+
+    .block-events__body {
+      height: 100%;
+    }
+
+    .block-events__show-body {
+      &::before {
+        padding: rem(5px);
+        display: inline-block;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.exposed-filter__keywords {
+  margin-bottom: rem(20px);
+}
+
+.exposed-filter__keywords__item {
+  font-size: rem(15px);
+  padding: rem(5px 10px);
+  margin-right: rem(15px);
+}
+
+.exposed-filter__keywords__close {
+  font-size: rem(10px);
+  cursor: pointer;
+}
+
+.exposed-filter__item {
+
+  &.close-filter {
+
+    .exposed-filter__content {
+      display: none;
+    }
+
+    .exposed-filter__toggle {
+
+      .text-show {
+        display: inline-block;
+      }
+
+      .text-hide {
+        display: none;
+      }
+
+      .exposed-filter__arrow:before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
